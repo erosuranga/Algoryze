@@ -192,7 +192,7 @@ export function Speakers() {
           >
             Speakers
           </h2>
-          <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
+          <p className="mt-4 font-display text-2xl tracking-tight text-gray-50">
             Learn from the experts on the cutting-edge of deception at the most
             sinister companies.
           </p>
@@ -233,7 +233,7 @@ export function Speakers() {
                         </div>
                         <time
                           dateTime={day.dateTime}
-                          className="mt-1.5 block text-2xl font-semibold tracking-tight text-blue-900"
+                          className="mt-1.5 block text-2xl font-semibold tracking-tight text-gray-50"
                         >
                           {day.date}
                         </time>

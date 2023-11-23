@@ -27,15 +27,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="en"
-      className={clsx(
-        'h-full bg-white antialiased',
-        inter.variable,
-        dmSans.variable,
-      )}
-    >
-      <body className="flex min-h-full">
+    <html lang="en" className={clsx('h-full antialiased bg-zinc-950', inter.variable, dmSans.variable)}>
+      <body className="flex min-h-full bg-zinc-950">
         <div className="flex w-full flex-col">{children}</div>
       </body>
     </html>
