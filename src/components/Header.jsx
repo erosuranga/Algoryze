@@ -20,8 +20,12 @@ export function Header() {
             <p>Los Angeles, CA</p>
           </div>
         </div>
-        <div className="hidden sm:mt-10 sm:flex lg:mt-0 lg:grow lg:basis-0 lg:justify-end">
-          <Button href="#">Get your tickets</Button>
+        <div className="hidden sm:mt-10 sm:flex lg:mt-0 lg:grow lg:basis-0 lg:justify-end gap-2">
+          <Button href="#">Indicadores</Button>
+          <Button href="#">Docs</Button>
+          <Button href="#">FAQs</Button>
+          {/* <Button href="#">Get your tickets</Button> */}
+          
         </div>
       </Container>
     </header>
