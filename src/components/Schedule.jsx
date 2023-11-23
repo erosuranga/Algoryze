@@ -228,10 +228,10 @@ function ScheduleTabbed() {
 function DaySummary({ day }) {
   return (
     <>
-      <h3 className="text-2xl font-semibold tracking-tight text-blue-900">
+      <h3 className="text-2xl font-semibold tracking-tight text-gray-50">
         <time dateTime={day.dateTime}>{day.date}</time>
       </h3>
-      <p className="mt-1.5 text-base tracking-tight text-blue-900">
+      <p className="mt-1.5 text-base tracking-tight text-gray-50">
         {day.summary}
       </p>
     </>
@@ -255,11 +255,11 @@ function TimeSlots({ day, className }) {
           {timeSlotIndex > 0 && (
             <div className="mx-auto mb-8 h-px w-48 bg-indigo-500/10" />
           )}
-          <h4 className="text-lg font-semibold tracking-tight text-blue-900">
+          <h4 className="text-lg font-semibold tracking-tight text-gray-50">
             {timeSlot.name}
           </h4>
           {timeSlot.description && (
-            <p className="mt-1 tracking-tight text-blue-900">
+            <p className="mt-1 tracking-tight text-gray-50">
               {timeSlot.description}
             </p>
           )}
@@ -301,7 +301,7 @@ export function Schedule() {
             Our three day schedule is jam-packed with brilliant, creative, evil
             geniuses.
           </h2>
-          <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
+          <p className="mt-4 font-display text-2xl tracking-tight text-gray-50">
             The worst people in our industry giving the best talks you’ve ever
             seen. Nothing will be recorded and every attendee has to sign an NDA
             to watch the talks.
