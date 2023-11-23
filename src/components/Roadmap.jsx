@@ -158,7 +158,7 @@ function ImageClipPaths({ id, ...props }) {
   )
 }
 
-export function Speakers() {
+export function Roadmap() {
   let id = useId()
   let [tabOrientation, setTabOrientation] = useState('horizontal')
 
@@ -190,7 +190,7 @@ export function Speakers() {
             id="speakers-title"
             className="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl"
           >
-            Speakers
+            Roadmap
           </h2>
           <p className="mt-4 font-display text-2xl tracking-tight text-gray-50">
             Learn from the experts on the cutting-edge of deception at the most
@@ -233,7 +233,7 @@ export function Speakers() {
                         </div>
                         <time
                           dateTime={day.dateTime}
-                          className="mt-1.5 block text-2xl font-semibold tracking-tight text-gray-50"
+                          className="mt-1.5 block text-2xl font-semibold tracking-tight text-gray-50 "
                         >
                           {day.date}
                         </time>

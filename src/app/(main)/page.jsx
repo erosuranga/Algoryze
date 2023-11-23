@@ -1,17 +1,21 @@
 import { Hero } from '@/components/Hero'
 import { Newsletter } from '@/components/Newsletter'
 import { Schedule } from '@/components/Schedule'
-import { Speakers } from '@/components/Speakers'
+import { Roadmap } from '@/components/Roadmap'
+import { Testimonials } from '@/components/Testimonials'
 import { Sponsors } from '@/components/Sponsors'
+import { FrequentlyAskedQuestions } from '@/components/FAQs'
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <Speakers />
+      <Testimonials />
+      <Roadmap />
       <Schedule />
       <Sponsors />
       <Newsletter />
+      <FrequentlyAskedQuestions/>
     </>
   )
 }
