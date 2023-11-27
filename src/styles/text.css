@@ -1,0 +1,25 @@
+.vertical-text {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  position: relative;
+  -webkit-animation: moving 5s infinite;
+  animation: moving 5s infinite;
+}
+
+@-webkit-keyframes moving {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 200px;
+  }
+}
+
+@keyframes moving {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 200px;
+  }
+}
