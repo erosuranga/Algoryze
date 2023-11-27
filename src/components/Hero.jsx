@@ -13,11 +13,9 @@ export function Hero() {
             Automatiza
             tu <div className='text-yellow-400'>trading</div>
           </h1>
-          <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-gray-50 text-center">
-            <p>
+          <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-gray-50 text-center">            
               La nueva generacion del trading autoamtizado de la maano de algorize, unete para aumetnar 
-              tus rendimientos de una manera sideral y eficaz.
-            </p>
+              tus rendimientos de una manera sideral y eficaz.            
           </div>
           {/* 
             <p>
@@ -27,9 +25,9 @@ export function Hero() {
             </p>
           </div>           
           */}
-          <Button href="#" className="mt-10 w-full sm:hidden">
+         {/*  <Button href="#" className="mt-10 w-full sm:hidden">
             Get your tickets
-          </Button>
+          </Button> */}
           {/* <dl className="mt-10 grid grid-cols-2 gap-x-10 gap-y-6 sm:mt-16 sm:gap-x-16 sm:gap-y-10 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
             {[
               ['Speakers', '18'],
