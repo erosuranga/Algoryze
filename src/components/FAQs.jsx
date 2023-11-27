@@ -10,12 +10,12 @@ const faqs = [
       "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
   },
   {
-    question: "What's the best thing about Switzerland?",
+    question: "What's the best thing about England?",
     answer:
       "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
   },
   {
-    question: "What's the best thing about Switzerland?",
+    question: "What's the best thing about Deustchland?",
     answer:
       "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
   },
@@ -56,9 +56,7 @@ export function FrequentlyAskedQuestions() {
                       </Disclosure.Button>
                     </dt>
                     <Disclosure.Panel as="dd" className="mt-2 pr-12">
-                      <p className="text-base leading-7 text-gray-100">
-                        {faq.answer}
-                      </p>
+                      
                     </Disclosure.Panel>
                   </>
                 )}
