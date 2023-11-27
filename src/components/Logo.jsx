@@ -1,7 +1,12 @@
+import Isologo from '../images/logos/isologo_golden.png'
+import Image from 'next/image'
+
+
 export function Logo(props) {
+
   return (
     <div className="flex flex-row ">
-      <svg aria-hidden="true" viewBox="0 0 183 48" {...props}></svg>
+      <Image src={Isologo} alt="isologo" className="h-12 w-auto text-gray-100" />
     </div>
   )
 }
