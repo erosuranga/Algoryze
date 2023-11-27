@@ -188,14 +188,14 @@ export function Roadmap() {
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2
             id="speakers-title"
-            className="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl"
+            className="font-display text-9xl font-medium tracking-tighter text-gray-200 sm:text-5xl"
           >
             Roadmap
           </h2>
-          <p className="mt-4 font-display text-2xl tracking-tight text-gray-50">
+          {/*  <p className="mt-4 font-display text-2xl tracking-tight text-gray-50">
             Learn from the experts on the cutting-edge of deception at the most
             sinister companies.
-          </p>
+          </p> */}
         </div>
         <Tab.Group
           as="div"
