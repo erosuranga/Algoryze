@@ -18,24 +18,20 @@ const dmSans = DM_Sans({
 
 export const metadata = {
   title: {
-    template: '%s - DeceptiConf',
-    default: 'DeceptiConf - A community-driven design conference',
+    template: '%s - Algoryze',
+    default: 'Algoryze - Algorithmic Trading for Everyone',
   },
   description:
-    'At DeceptiConf you’ll learn about the latest dark patterns being developed to trick even the smartest visitors, and you’ll learn how to deploy them without ever being detected.',
+    'At Algoryze we specialize in cutting-edge algorithmic trading solutions. Our team of experts harnesses the power of advanced algorithms and data analytics to navigate the complexities of financial markets.',
 }
 
 export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={clsx(
-        'h-full bg-white antialiased',
-        inter.variable,
-        dmSans.variable,
-      )}
+      className={clsx('h-full ', inter.variable, dmSans.variable)}
     >
-      <body className="flex min-h-full">
+      <body className="flex min-h-full bg-zinc-950">
         <div className="flex w-full flex-col">{children}</div>
       </body>
     </html>
