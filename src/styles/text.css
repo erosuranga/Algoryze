@@ -2,7 +2,7 @@
   writing-mode: vertical-lr;
   text-orientation: upright;
   position: relative;
-  animation: moving 35s linear infinite;
+  animation: moving 35s infinite; /* Agregué steps(1) */
   display: inline-block;
   line-height: 1;
   margin-bottom: 10vh;
@@ -10,13 +10,15 @@
 
 @keyframes moving {
   0% {
-    transform: translateY(-100%);
+    transform: translateY(100%);
   }
+
   50% {
-    transform: translateY(-75%);
+    transform: translateY(50%);
   }
+
   100% {
-    transform: translateY(-50%);
+    transform: translateY(0%);
   }
 }
 
