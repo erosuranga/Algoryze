@@ -3,7 +3,6 @@
 import Image from 'next/image'
 import Isotipo from '../images/logos/isotipo_golden.png'
 import '../styles/title.css'
-import { MDBBtn, MDBContainer } from 'mdb-react-ui-kit'
 
 const testimonials = [
   {
@@ -61,14 +60,14 @@ export function Testimonials() {
 
         {/** Content */}
         <div className="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
-          <div className="-mt-8 flex grid grid-cols-1 sm:-mx-4 sm:grid-cols-2 sm:text-[0] md:grid-cols-3">
+          <div className="-mt-8 grid grid-cols-1 sm:-mx-4 sm:grid-cols-2 sm:text-[0] md:grid-cols-2 lg:grid-cols-3 ">
             {/** Card */}
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
                 className="h-full grow pt-8 sm:inline-block sm:w-full sm:px-4"
               >
-                <figure className="rounded-2xl bg-zinc-900 p-8 text-sm leading-6">
+                <figure className=" h-full rounded-2xl bg-zinc-900 p-8 text-sm leading-6 shadow-sm shadow-yellow-400 ">
                   <blockquote className="text-xl font-semibold text-gray-50">
                     <p>{`${testimonial.author.name}`}</p>
                   </blockquote>
