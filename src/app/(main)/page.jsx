@@ -1,6 +1,6 @@
 import { Hero } from '@/components/Hero'
 import { Newsletter } from '@/components/Newsletter'
-import { Schedule } from '@/components/Schedule'
+import { CallToAction } from '@/components/CallToAction'
 import { Roadmap } from '@/components/Roadmap'
 import { Testimonials } from '@/components/Testimonials'
 import { Sponsors } from '@/components/Sponsors'
@@ -12,9 +12,9 @@ export default function Home() {
       <Hero />
       <Testimonials />
       <Roadmap />
-      {/*  <Schedule />
-      <Sponsors /> */}
-      <Newsletter />
+      <CallToAction />
+      {/* <Sponsors /> */}
+      {/*   <Newsletter /> */}
       <FrequentlyAskedQuestions />
     </>
   )
