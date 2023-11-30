@@ -1,16 +1,27 @@
 import { BackgroundImage } from '@/components/BackgroundImage'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
+import '../styles/hero.css'
 
 export function Hero() {
   return (
     <div className="relative py-20 sm:pb-24 sm:pt-36">
       <Container className="relative">
         <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
-          <h1 className="text-center font-display text-5xl  font-bold uppercase tracking-tighter text-gray-50 sm:text-8xl">
-            <span className="sr-only">Algoryze - </span>
-            Automatiza tu <div className="roller text-yellow-400">trading</div>
-          </h1>
+          <span className="sr-only">Algoryze - </span>
+
+          <div class="text-box">
+            <h1 className="fixed-text text-center font-display text-5xl  font-bold uppercase tracking-tighter text-gray-50 sm:text-8xl">
+              Automatiza <br /> tu
+            </h1>
+            <div className="animate-text">
+              <div>
+                <span>TRAIDING</span>
+                <span>MONEY</span>
+                <span>TIME</span>
+              </div>
+            </div>
+          </div>
           <div className="mt-6 space-y-6 text-center font-display text-2xl tracking-tight text-gray-50">
             La nueva generacion del trading autoamtizado de la maano de
             algorize, unete para aumetnar tus rendimientos de una manera sideral

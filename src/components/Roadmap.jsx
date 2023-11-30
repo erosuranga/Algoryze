@@ -196,7 +196,7 @@ export function Roadmap() {
             </h2>
           </div>
         </div>
-      </div>{' '}
+      </div>
       <Container>
         <Tab.Group
           as="div"
