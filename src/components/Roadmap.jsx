@@ -185,35 +185,24 @@ export function Roadmap() {
       className="py-20 sm:py-32"
     >
       <ImageClipPaths id={id} />
+      <div className="div-body">
+        <div className="div-block">
+          <div className="div-block-1 mx-auto max-w-2xl lg:mx-0">
+            <h2
+              id="speakers-title"
+              className="vertical-text sm:text-1xl font-display text-5xl font-bold tracking-normal text-gray-200 "
+            >
+              ROADMAP
+            </h2>
+          </div>
+        </div>
+      </div>{' '}
       <Container>
         <Tab.Group
           as="div"
-          className="mt-14 grid grid-cols-1 items-start gap-x-8 gap-y-8 sm:mt-16 sm:gap-y-16 lg:mt-24 lg:grid-cols-5"
+          className="mt-14 grid grid-cols-1 items-start gap-x-8 gap-y-8 sm:mt-16 sm:gap-y-16 lg:mt-24 lg:grid-cols-4"
           vertical={tabOrientation === 'vertical'}
         >
-          <div className="div-block">
-            <div className="div-block-1 mx-auto max-w-2xl lg:mx-0">
-              <h2
-                id="speakers-title"
-                className="vertical-text sm:text-1xl font-display text-5xl font-bold tracking-normal text-gray-200 "
-              >
-                ROADMAP
-              </h2>
-              <h2
-                id="speakers-title"
-                className="vertical-text  sm:text-1xl font-display text-5xl font-bold tracking-normal text-gray-200 "
-              >
-                ROADMAP
-              </h2>
-              <h2
-                id="speakers-title"
-                className="vertical-text  sm:text-1xl font-display text-5xl font-bold tracking-normal text-gray-200 "
-              >
-                ROADMAP
-              </h2>
-            </div>
-          </div>
-
           <div className="relative -mx-4 flex overflow-x-auto pb-4 sm:mx-0 sm:block sm:overflow-visible sm:pb-0">
             <div className="absolute bottom-0 left-0.5 top-2 hidden w-px bg-slate-200 lg:block" />
             <Tab.List className="grid auto-cols-auto grid-flow-col justify-start gap-x-8 gap-y-10 whitespace-nowrap px-4 sm:mx-auto sm:max-w-2xl sm:grid-cols-3 sm:px-0 sm:text-center lg:grid-flow-row lg:grid-cols-1 lg:text-left">
