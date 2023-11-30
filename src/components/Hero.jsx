@@ -8,14 +8,14 @@ export function Hero() {
 
       <Container className="relative">
         <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
-          <h1 className="font-display text-5xl sm:text-8xl  font-bold tracking-tighter text-gray-50 text-center uppercase">
+          <h1 className="font-display text-5xl sm:text-8xl font-bold tracking-tighter text-gray-50 text-center uppercase">
             <span className="sr-only">Algoryze - </span>
             Automatiza
             tu <div className='text-yellow-400'>trading</div>
           </h1>
-          <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-gray-50 text-center">            
-              La nueva generacion del trading autoamtizado de la maano de algorize, unete para aumetnar 
-              tus rendimientos de una manera sideral y eficaz.            
+          <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-gray-50 text-center">                          
+              La flamante era del trading automatizado llega de la mano de Algorize. 
+              Únete a nosotros para impulsar tus rendimientos de manera sideral y altamente eficiente.
           </div>
           {/* 
             <p>
