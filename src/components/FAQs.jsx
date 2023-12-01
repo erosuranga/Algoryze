@@ -47,7 +47,9 @@ export function FrequentlyAskedQuestions() {
         </div>
 
         {/** title */}
+        
         <h2 className="text-center font-display text-9xl font-medium tracking-tighter text-gray-50 hover:text-yellow-400 sm:text-5xl">
+
           Preguntas Frecuentes
         </h2>
 
