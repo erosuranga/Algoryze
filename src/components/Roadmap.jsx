@@ -4,6 +4,7 @@ import { useEffect, useId, useState } from 'react'
 import Image from 'next/image'
 import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
+import '../styles/roadmap.css'
 
 import { Container } from '@/components/Container'
 import { DiamondIcon } from '@/components/DiamondIcon'
@@ -185,17 +186,26 @@ export function Roadmap() {
     >
       <ImageClipPaths id={id} />
       <Container>
-        <div className="mx-auto max-w-2xl lg:mx-0">
+        {/* 
           <h2
             id="speakers-title"
             className="font-display text-9xl font-medium tracking-tighter text-gray-200 sm:text-5xl"
           >
             Roadmap
           </h2>
-          {/*  <p className="mt-4 font-display text-2xl tracking-tight text-gray-50">
+
+          <p className="mt-4 font-display text-2xl tracking-tight text-gray-50">
             Learn from the experts on the cutting-edge of deception at the most
             sinister companies.
-          </p> */}
+          </p>
+        </div> */}{' '}
+        <div className="mx-auto max-w-2xl lg:mx-0">
+          <div className="scroll-container">
+            <h2 className="scroll-text text-9xl font-medium tracking-tighter text-gray-200 sm:text-5xl">
+              This is scrolling text.
+            </h2>
+            <h2 className="scroll-text">This is scrolling text.</h2>
+          </div>
         </div>
         <Tab.Group
           as="div"
