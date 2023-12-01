@@ -5,7 +5,6 @@ import { Roadmap } from '@/components/Roadmap'
 import { Testimonials } from '@/components/Testimonials'
 import { Sponsors } from '@/components/Sponsors'
 import { FrequentlyAskedQuestions } from '@/components/FAQs'
-import Prices from '@/components/prices'
 
 export default function Home() {
   return (
@@ -17,7 +16,7 @@ export default function Home() {
 
       {/* <Sponsors /> */}
       {/*   <Newsletter /> */}
-      <Prices />
+
       <FrequentlyAskedQuestions />
     </>
   )
