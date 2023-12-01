@@ -41,8 +41,8 @@ export default function Counter() {
     }
   }, [isVisible])
 
-  // Lógica de renderizado para mostrar "+10000" al finalizar
-  const displayValue = counter >= 10000 ? '+10000 USUARIOS' : counter
+  // Lógica de renderizado para mostrar el contador y la palabra 'USUARIOS' desde el principio
+  const displayValue = isVisible ? `+ ${counter} USUARIOS` : ''
 
   return <div className="counter">{displayValue}</div>
 }

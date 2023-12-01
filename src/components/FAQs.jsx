@@ -47,7 +47,9 @@ export function FrequentlyAskedQuestions() {
         </div>
 
         {/** title */}
-        <h2 className="text-center font-display text-9xl font-medium tracking-tighter text-gray-50 sm:text-5xl">
+        
+        <h2 className="text-center font-display text-9xl font-medium tracking-tighter text-gray-50 hover:text-yellow-400 sm:text-5xl">
+
           Preguntas Frecuentes
         </h2>
 
@@ -59,7 +61,7 @@ export function FrequentlyAskedQuestions() {
                 {({ open }) => (
                   <>
                     <dt>
-                      <Disclosure.Button className="flex w-full items-start justify-between text-left text-gray-100">
+                      <Disclosure.Button className="flex w-full items-start justify-between text-left text-yellow-400 hover:text-gray-50 ">
                         <span className="text-base font-semibold leading-7 tracking-wide">
                           {faq.question}
                         </span>
