@@ -8,6 +8,7 @@ export function Hero() {
     <div className="relative py-20 sm:pb-24 sm:pt-36">
       <Container className="relative">
         <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
+
           <span className="sr-only">Algoryze - </span>
 
           <div class="text-box">
@@ -25,7 +26,7 @@ export function Hero() {
           <div className="mt-6 space-y-6 text-center font-display text-2xl tracking-tight text-gray-50">
             La nueva generacion del trading autoamtizado de la maano de
             algorize, unete para aumetnar tus rendimientos de una manera sideral
-            y eficaz.
+
           </div>
           {/* 
             <p>

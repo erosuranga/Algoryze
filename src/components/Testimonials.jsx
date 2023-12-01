@@ -54,7 +54,7 @@ export function Testimonials() {
         <div className="mx-auto max-w-xl text-center">
           <h2 className="font-display text-4xl font-medium tracking-tighter text-gray-50 sm:text-5xl">
             Trusted by over
-            <div className="users">+50,000 users</div>
+            <div className="users text-gray-50">+50,000 users</div>
           </h2>
         </div>
 
@@ -67,7 +67,7 @@ export function Testimonials() {
                 key={index}
                 className="h-full grow pt-8 sm:inline-block sm:w-full sm:px-4"
               >
-                <figure className=" h-full rounded-2xl bg-zinc-900 p-8 text-sm leading-6 shadow-sm shadow-yellow-400 ">
+                <figure className=" h-full rounded-2xl border border-yellow-400 bg-[#1d2028] p-8 text-sm leading-6">
                   <blockquote className="text-xl font-semibold text-gray-50">
                     <p>{`${testimonial.author.name}`}</p>
                   </blockquote>

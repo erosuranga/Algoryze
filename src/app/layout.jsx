@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
       lang="en"
       className={clsx('h-full ', inter.variable, dmSans.variable)}
     >
-      <body className="flex min-h-full bg-zinc-950">
+      <body className="flex min-h-full bg-[#151823]">
         <div className="flex w-full flex-col">{children}</div>
       </body>
     </html>
