@@ -202,9 +202,11 @@ export function Roadmap() {
         <div className="mx-auto max-w-2xl lg:mx-0">
           <div className="scroll-container">
             <h2 className="scroll-text text-9xl font-medium tracking-tighter text-gray-200 sm:text-5xl">
-              This is scrolling text.
+              ROADMAP
             </h2>
-            <h2 className="scroll-text">This is scrolling text.</h2>
+            <h2 className="scroll-text text-9xl font-medium tracking-tighter text-gray-200 sm:text-5xl">
+              ROADMAP
+            </h2>
           </div>
         </div>
         <Tab.Group

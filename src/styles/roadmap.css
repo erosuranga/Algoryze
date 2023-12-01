@@ -8,6 +8,9 @@
   -moz-transform: translateX(100%);
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
+  display: inline-block;
+  margin-right: 5px;
+  white-space: nowrap;
 
   -moz-animation: my-animation 15s linear infinite;
   -webkit-animation: my-animation 15s linear infinite;
