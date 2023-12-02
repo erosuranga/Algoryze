@@ -8,6 +8,7 @@ import { Container } from '@/components/Container'
 import MacbookTrading from '@/images/macbook_trading.png'
 import { Transition } from '@headlessui/react'
 import Counter from './counter'
+import '../styles/colortext.css'
 
 const AnimatedMacbook = () => {
   const [isInViewport, setIsInViewport] = useState(false)
@@ -86,29 +87,29 @@ export function CallToAction() {
 
         {/** title */}
         <div className="flex flex-col">
-          <h2 className="font-display text-7xl font-medium tracking-tighter text-gray-50 sm:text-9xl">
+          <h2 className="font-display text-7xl font-medium tracking-tighter text-gray-50 sm:text-7xl">
             TOP #1
           </h2>
 
-          <span className="ml-2 mt-4 font-display text-4xl tracking-tight text-gray-50">
+          <span className="gradient-text ml-2 mt-4 font-display text-3xl tracking-tight">
             INDICADOR
           </span>
 
-          <span className="ml-2 font-display text-4xl tracking-tight text-yellow-400">
+          <span className="gradient-text ml-2 font-display text-3xl tracking-tight text-transparent">
             INSTITUCIONAL
           </span>
 
-          <span className="ml-2 mt-10  font-display text-4xl tracking-tight text-gray-50">
+          <span className="ml-2   font-display text-3xl tracking-tight text-gray-50">
             <span
               id="mySection"
-              className="inline-block align-top text-yellow-400"
+              className="gradient-text inline-block align-top"
             >
               <Counter />
             </span>
           </span>
 
           <div className="text-center">
-            <button className="mt-20 animate-bounce rounded-lg bg-yellow-400 px-8 py-4 font-semibold text-gray-900 shadow-md transition duration-300 hover:bg-yellow-300">
+            <button className="gradient-button mt-20 animate-bounce rounded-lg px-8 py-4 font-semibold text-gray-900 shadow-md transition duration-300 hover:bg-yellow-300">
               Suscribirme
             </button>
           </div>

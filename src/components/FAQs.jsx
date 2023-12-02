@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { Disclosure } from '@headlessui/react'
 import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
 import Isotipo from '../images/logos/isotipo_golden.png'
+import '../styles/colortext.css'
 
 const faqs = [
   {
@@ -47,9 +48,8 @@ export function FrequentlyAskedQuestions() {
         </div>
 
         {/** title */}
-        
-        <h2 className="text-center font-display text-9xl font-medium tracking-tighter text-gray-50 hover:text-yellow-400 sm:text-5xl">
 
+        <h2 className="gradient-text text-center font-display text-9xl font-medium tracking-tighter hover:text-gray-50 sm:text-5xl">
           Preguntas Frecuentes
         </h2>
 
@@ -61,7 +61,7 @@ export function FrequentlyAskedQuestions() {
                 {({ open }) => (
                   <>
                     <dt>
-                      <Disclosure.Button className="flex w-full items-start justify-between text-left text-yellow-400 hover:text-gray-50 ">
+                      <Disclosure.Button className="gradient-text flex w-full items-start justify-between text-left hover:text-gray-50 ">
                         <span className="text-base font-semibold leading-7 tracking-wide">
                           {faq.question}
                         </span>

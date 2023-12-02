@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import Isotipo from '../images/logos/isotipo_golden.png'
 import '../styles/title.css'
+import '../styles/colortext.css'
 
 const testimonials = [
   {
@@ -52,7 +53,7 @@ export function Testimonials() {
 
         {/** Title */}
         <div className="mx-auto max-w-xl text-center">
-          <h2 className="font-display text-4xl font-medium tracking-tighter text-gray-50 sm:text-5xl">
+          <h2 className="gradient-text font-display text-4xl font-medium tracking-tighter sm:text-5xl">
             Trusted by over
             <div className="users text-gray-50">+50,000 users</div>
           </h2>
