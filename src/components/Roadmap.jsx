@@ -3,9 +3,8 @@
 import { useEffect, useId, useState } from 'react'
 import Image from 'next/image'
 import { Tab } from '@headlessui/react'
-
+import clsx from 'clsx'
 import '../styles/roadmap.css'
-
 
 import { Container } from '@/components/Container'
 import { DiamondIcon } from '@/components/DiamondIcon'
@@ -209,7 +208,7 @@ export function Roadmap() {
             </h2>
           </div>
         </div>
-      </div>
+      </Container>
       <Container>
         <Tab.Group
           as="div"
