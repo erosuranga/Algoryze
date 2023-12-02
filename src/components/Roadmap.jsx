@@ -4,6 +4,7 @@ import { useEffect, useId, useState } from 'react'
 import Image from 'next/image'
 import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
+import '../styles/text.css'
 
 import { Container } from '@/components/Container'
 import { DiamondIcon } from '@/components/DiamondIcon'
@@ -28,8 +29,8 @@ import waylonHydenImage from '@/images/avatars/waylon-hyden.jpg'
 
 const days = [
   {
-    name: 'Opening Day',
-    date: 'April 4',
+    name: 'Introducing',
+    date: 'Step 1',
     dateTime: '2022-04-04',
     speakers: [
       {
@@ -66,7 +67,7 @@ const days = [
   },
   {
     name: 'Speakers & Workshops',
-    date: 'April 5',
+    date: 'Step 2',
     dateTime: '2022-04-05',
     speakers: [
       {
@@ -103,7 +104,7 @@ const days = [
   },
   {
     name: 'Interviews',
-    date: 'April 6',
+    date: 'Step 3',
     dateTime: '2022-04-06',
     speakers: [
       {
@@ -184,19 +185,19 @@ export function Roadmap() {
       className="py-20 sm:py-32"
     >
       <ImageClipPaths id={id} />
-      <Container>
-        <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2
-            id="speakers-title"
-            className="font-display text-9xl font-medium tracking-tighter text-gray-200 sm:text-5xl"
-          >
-            Roadmap
-          </h2>
-          {/*  <p className="mt-4 font-display text-2xl tracking-tight text-gray-50">
-            Learn from the experts on the cutting-edge of deception at the most
-            sinister companies.
-          </p> */}
+      <div className="div-body">
+        <div className="div-block">
+          <div className="div-block-1 mx-auto max-w-2xl lg:mx-0">
+            <h2
+              id="speakers-title"
+              className="vertical-text sm:text-1xl font-display text-5xl font-bold tracking-normal text-gray-200 "
+            >
+              ROADMAP
+            </h2>
+          </div>
         </div>
+      </div>
+      <Container>
         <Tab.Group
           as="div"
           className="mt-14 grid grid-cols-1 items-start gap-x-8 gap-y-8 sm:mt-16 sm:gap-y-16 lg:mt-24 lg:grid-cols-4"
@@ -213,7 +214,7 @@ export function Roadmap() {
                         className={clsx(
                           'absolute left-[-0.5px] top-[0.5625rem] hidden h-1.5 w-1.5 overflow-visible lg:block',
                           dayIndex === selectedIndex
-                            ? 'fill-blue-600 stroke-blue-600'
+                            ? 'fill-yellow-400 stroke-yellow-400'
                             : 'fill-transparent stroke-slate-400',
                         )}
                       />
@@ -222,7 +223,7 @@ export function Roadmap() {
                           className={clsx(
                             'font-mono text-sm',
                             dayIndex === selectedIndex
-                              ? 'text-blue-600'
+                              ? 'text-yellow-400'
                               : 'text-slate-500',
                           )}
                         >

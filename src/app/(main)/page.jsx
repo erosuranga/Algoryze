@@ -13,8 +13,8 @@ export default function Home() {
       <Testimonials />
       <Roadmap />
       <CallToAction />
-      {/* <Sponsors /> */} 
-      <Newsletter />
+      {/* <Sponsors /> */}
+      {/*   <Newsletter /> */}
       <FrequentlyAskedQuestions />
     </>
   )
