@@ -55,7 +55,7 @@ export function Testimonials() {
         <div className="mx-auto max-w-xl text-center">
           <h2 className="gradient-text font-display text-4xl font-medium tracking-tighter sm:text-5xl">
             Trusted by over
-            <div className="users text-gray-50">+50,000 users</div>
+            <div className="users">+50,000 users</div>
           </h2>
         </div>
 

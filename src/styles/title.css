@@ -1,10 +1,11 @@
+/** Testimonial Title **/
 .users {
   padding: 5px;
   background: linear-gradient(
     to right,
-    hsl(0, 0%, 90%) 0,
-    hsl(51, 93%, 43%) 12%,
-    hsl(0, 0%, 90%) 20%
+    hsl(51, 3%, 17%) 0,
+    hwb(51 3% 17%) 12%,
+    hwb(51 2% 35%) 20%
   );
   background-clip: text;
   -webkit-background-clip: text;

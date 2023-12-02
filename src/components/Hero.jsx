@@ -11,7 +11,7 @@ export function Hero() {
 
           <span className="sr-only">Algoryze - </span>
 
-          <div class="text-box">
+          <div className="text-box">
             <h1 className="fixed-text text-center font-display text-5xl  font-bold uppercase tracking-tighter text-gray-50 sm:text-8xl">
               Automatiza <br /> tu
             </h1>

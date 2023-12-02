@@ -1,6 +1,6 @@
 /* Clase para aplicar degradado a texto sin alineación ni cambios en el display */
 .gradient-text {
-  color: yellow;
+  color: #facc15;
   /*background-clip: text; background-image: linear-gradient(
     to top,
 

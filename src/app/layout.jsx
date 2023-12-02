@@ -1,4 +1,5 @@
 import { DM_Sans, Inter } from 'next/font/google'
+import localFont from 'next/font/local'
 import clsx from 'clsx'
 
 import '@/styles/tailwind.css'
@@ -16,6 +17,8 @@ const dmSans = DM_Sans({
   variable: '--font-dm-sans',
 })
 
+const myFont = localFont({ src: './Akzidenz-Grotesk-bold.ttf' })
+
 export const metadata = {
   title: {
     template: '%s - Algoryze',
@@ -29,9 +32,10 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={clsx('h-full ', inter.variable, dmSans.variable)}
+      className={clsx('h-full ', myFont.className)}
     >
       <body className="flex min-h-full bg-[#151823]">
+        sss
         <div className="flex w-full flex-col">{children}</div>
       </body>
     </html>
