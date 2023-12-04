@@ -7,6 +7,15 @@ export function Hero() {
   return (
     <div className="relative py-20 sm:pb-24 sm:pt-36">
       <Container className="relative">
+        
+        <div className='ripple-background'>
+          <div className='circle xxlarge shade1'></div>
+          <div className='circle xlarge shade2'></div>
+          <div className='circle large shade3'></div>
+          <div className='circle mediun shade4'></div>
+          <div className='circle small shade5'></div>
+        </div>
+
         <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
 
           <span className="sr-only">Algoryze - </span>
