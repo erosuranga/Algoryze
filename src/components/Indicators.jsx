@@ -42,7 +42,7 @@ export function Indicators() {
               <h2 className='mt-10 text-xl font-bold tracking-tight text-gray-50 sm:text-xl'>Previous Day High and Low + Separators Daily/Weekly</h2>
               <p className="mt-6 leading-8 text-gray-100">
                 This indicator is a powerful tool designed for traders on TradingView.
-                This indicator utilizes separators to distinguish between trading days and weeks, all while highlighting the previous day's
+                This indicator utilizes separators to distinguish between trading days and weeks, all while highlighting the previous day&apos;s
                 high and low points with clear lines on your chart.
               </p>
             </div>
