@@ -17,9 +17,9 @@ export function Hero() {
             </h1>
             <div className="animate-text">
               <div>
-                <span>TRAIDING</span>
-                <span>MONEY</span>
-                <span>TIME</span>
+                <span className='mx-auto'>TRAIDING</span>
+                <span className='mx-auto'>MONEY</span>
+                <span className='mx-auto'>TIME</span>
               </div>
             </div>
           </div>

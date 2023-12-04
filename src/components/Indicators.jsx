@@ -1,4 +1,6 @@
 import '../styles/colortext.css'
+import Image from 'next/image'
+import Isotipo from '../images/logos/isotipo_golden.png'
 
 const stats = [
   { label: 'Founded', value: '2021' },
@@ -9,85 +11,95 @@ const stats = [
 
 export function Indicators() {
   return (
-    <div className="bg-[#151823] py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+    <div className="relative isolate overflow-hidden bg-[#151823] px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+
+      <div className="absolute inset-0 -z-10 overflow-hidden">
+        <svg className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-yellow-800 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]" aria-hidden="true">
+          <defs>
+            <pattern id="e813992c-7d03-4cc4-a2bd-151760b470a0" width={200} height={200} x="50%" y={-1} patternUnits="userSpaceOnUse">
+              <path d="M100 200V.5M.5 .5H200" fill="none" />
+            </pattern>
+          </defs>
+          <svg x="50%" y={-1} className="overflow-visible fill-[#151823]">
+            <path
+              d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
+              strokeWidth={0}
+            />
+          </svg>
+          <rect width="100%" height="100%" strokeWidth={0} fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" />
+        </svg>
+      </div>
+      <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
+
+        <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
-            <div className="relative overflow-hidden rounded-3xl bg-gray-900 px-6 pb-9 pt-64 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
-              <img className="absolute inset-0 h-full w-full object-cover brightness-125 saturate-100" src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""/>
-              <div className="absolute inset-0 mix-blend-multiply" />
-              <div className="absolute left-1/2 top-1/2 -ml-16 -translate-x-1/2 -translate-y-1/2 transform-gpu blur-3xl" aria-hidden="true">
-                <div className="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-0" 
-                  style={{
-                    clipPath:
-                      'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-                  }}
+            <div className="lg:max-w-lg">
+              {/* 
+              <div className="mb-10 h-16">
+                <Image
+                  src={Isotipo}
+                  alt="isotipo"
+                  className="h-16 w-auto text-gray-100"
                 />
-              </div>
-              <figure className="relative isolate">                
-                
-                <figcaption className="mt-6 text-sm leading-6 text-gray-300">
-                  <strong className="font-semibold text-white">
-                    Judith Rogers,
-                  </strong>{' '}
-                  CEO at Workcation
-                </figcaption>
-              </figure>
+              </div> */}
+
+              <p className="text-base font-semibold leading-7 text-yellow-500">Analyze faster</p>
+              <h1 className="mt-2 text-3xl font-bold tracking-tight text-yellow-400 sm:text-4xl">Algoryze Indicators</h1>
+              <h2 className='mt-10 text-xl font-bold tracking-tight text-gray-50 sm:text-xl'>Previous Day High and Low + Separators Daily/Weekly</h2>
+              <p className="mt-6 leading-8 text-gray-100">
+                This indicator is a powerful tool designed for traders on TradingView.
+                This indicator utilizes separators to distinguish between trading days and weeks, all while highlighting the previous day's
+                high and low points with clear lines on your chart.
+              </p>
             </div>
           </div>
-          <div>
-            <div className="text-base leading-7 text-gray-700 lg:max-w-lg">
-              {/*   <p className="text-base font-semibold leading-7 text-indigo-600">
-                Company values
-              </p> */}
-              <h1 className="gradient-text mt-2 text-3xl font-medium tracking-normal sm:text-4xl">
-                INDICATORS
-              </h1>
-              <div className="max-w-xl">
-                <p className="mt-6 font-normal text-gray-50">
-                  Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
-                  risus enim. Mattis mauris semper sed amet vitae sed turpis id.
-                  Id dolor praesent donec est. Odio penatibus risus viverra
-                  tellus varius sit neque erat velit. Faucibus commodo massa
-                  rhoncus, volutpat. Dignissim sed eget risus enim. Mattis
-                  mauris semper sed amet vitae sed turpis id.
-                </p>
-                {/*   <p className="mt-8">
-                  Et vitae blandit facilisi magna lacus commodo. Vitae sapien
-                  duis odio id et. Id blandit molestie auctor fermentum
-                  dignissim. Lacus diam tincidunt ac cursus in vel. Mauris
-                  varius vulputate et ultrices hac adipiscing egestas. Iaculis
-                  convallis ac tempor et ut. Ac lorem vel integer orci.
-                </p>
-                <p className="mt-8">
-                  Et vitae blandit facilisi magna lacus commodo. Vitae sapien
-                  duis odio id et. Id blandit molestie auctor fermentum
-                  dignissim. Lacus diam tincidunt ac cursus in vel. Mauris
-                  varius vulputate et ultrices hac adipiscing egestas. Iaculis
-                  convallis ac tempor et ut. Ac lorem vel integer orci.
-                </p> */}
-              </div>
-            </div>
-            {/*   <dl className="mt-10 grid grid-cols-2 gap-8 border-t border-gray-900/10 pt-10 sm:grid-cols-4">
-              {stats.map((stat, statIdx) => (
-                <div key={statIdx}>
-                  <dt className="text-sm font-semibold leading-6 text-gray-600">
-                    {stat.label}
-                  </dt>
-                  <dd className="mt-2 text-3xl font-bold leading-10 tracking-tight text-gray-900">
-                    {stat.value}
-                  </dd>
-                </div>
-              ))}
-            </dl> */}
-            <div className="mt-10 flex">
-              <a
-                href="#"
-                className="gradient-text text-base font-semibold leading-7 tracking-normal"
-              >
-                Learn more about our company{' '}
-                <span aria-hidden="true">&rarr;</span>
-              </a>
+        </div>
+        <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+          <img className="w-[48rem] h-full max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]" src="https://s3.tradingview.com/snapshots/d/d8dnXvmQ.png" alt="" />
+        </div>
+        <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+          <div className="lg:pr-4">
+            <div className="max-w-xl text-base leading-8 text-gray-100 lg:max-w-lg">
+              <p>
+                By marking each day of the week at the top of your chart, it provides a visual reference for the time within your trading week, and each day is separated based on the 00:00 time of your chosen timezone.
+              </p>
+              <p className='my-4'>
+                Understanding the reference points of the previous day's highs and lows is crucial for predicting the likely direction of the next trading day, whether it's a continuation or reversal of the trend.
+              </p>
+              <p className='my-4'>
+                One of the standout features of this indicator is its adaptability. You can customize the appearance of the lines to suit your chart design and adjust their intensity as needed.
+              </p>
+
+              <ul role="list" className="mt-8 space-y-8 text-gray-600">
+                <li className="flex gap-x-3">
+                  <span className='text-gray-100 ml-5'>
+                    <strong className="font-semibold text-gray-50">UTC OFFSET:</strong>{" "}
+                    Set your timezone here to ensure accurate time references.
+                  </span>
+                </li>
+                <li className="flex gap-x-3">
+                  <span className='text-gray-100 ml-5'>
+                    <strong className="font-semibold text-gray-50"> DAILY SEPARATOR:</strong>{' '}
+                    Customize the color, style, width, and text color of the daily separators to match your preferences.
+                  </span>
+                </li>
+                <li className="flex gap-x-3">
+                  <span className='text-gray-100 ml-5'>
+                    <strong className="font-semibold text-gray-50">WEEKLY SEPARATOR:</strong>{' '}
+                    Tailor the appearance of the weekly separators with options for color, style, width, and text color.
+                  </span>
+                </li>
+                <li className="flex gap-x-3">
+                  <span className='text-gray-100 ml-5'>
+                    <strong className="font-semibold text-gray-50">PREVIOUS HIGHS & LOWS:</strong>{' '}
+                    Customize the appearance of the lines representing previous day's highs and lows, including color, style, width, and text color.
+                  </span>
+                </li>
+              </ul>
+
+              <p className='my-8'>
+                With the Previous Day High and Low + Separators Daily/Weekly indicator, you can enhance your trading analysis by visually tracking important reference points and adapt the indicator to your chart's aesthetics and requirements.
+              </p>
             </div>
           </div>
         </div>
