@@ -71,11 +71,11 @@ export function Indicators() {
               {/*   <p className="text-base font-semibold leading-7 text-indigo-600">
                 Company values
               </p> */}
-              <h1 className="gradient-text mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
+              <h1 className="gradient-text mt-2 text-3xl font-medium tracking-normal sm:text-4xl">
                 INDICATORS
               </h1>
               <div className="max-w-xl">
-                <p className="mt-6 text-gray-50">
+                <p className="mt-6 font-normal text-gray-50">
                   Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
                   risus enim. Mattis mauris semper sed amet vitae sed turpis id.
                   Id dolor praesent donec est. Odio penatibus risus viverra
@@ -114,7 +114,7 @@ export function Indicators() {
             <div className="mt-10 flex">
               <a
                 href="#"
-                className="text-base font-semibold leading-7 text-indigo-600"
+                className="gradient-text text-base font-semibold leading-7 tracking-normal"
               >
                 Learn more about our company{' '}
                 <span aria-hidden="true">&rarr;</span>
