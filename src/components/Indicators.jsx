@@ -16,7 +16,11 @@ export function Indicators() {
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <svg className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-yellow-800 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]" aria-hidden="true">
           <defs>
-            <pattern id="e813992c-7d03-4cc4-a2bd-151760b470a0" width={200} height={200} x="50%" y={-1} patternUnits="userSpaceOnUse">
+            <pattern id="e813992c-7d03-4cc4-a2bd-151760b470a0" width={200}height={200}
+              x="50%"
+              y={-1}
+              patternUnits="userSpaceOnUse"
+            >
               <path d="M100 200V.5M.5 .5H200" fill="none" />
             </pattern>
           </defs>
@@ -30,19 +34,9 @@ export function Indicators() {
         </svg>
       </div>
       <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
-
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="lg:max-w-lg">
-              {/* 
-              <div className="mb-10 h-16">
-                <Image
-                  src={Isotipo}
-                  alt="isotipo"
-                  className="h-16 w-auto text-gray-100"
-                />
-              </div> */}
-
               <p className="text-base font-semibold leading-7 text-yellow-500">Analyze faster</p>
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-yellow-400 sm:text-4xl">Algoryze Indicators</h1>
               <h2 className='mt-10 text-xl font-bold tracking-tight text-gray-50 sm:text-xl'>Previous Day High and Low + Separators Daily/Weekly</h2>
@@ -64,7 +58,7 @@ export function Indicators() {
                 By marking each day of the week at the top of your chart, it provides a visual reference for the time within your trading week, and each day is separated based on the 00:00 time of your chosen timezone.
               </p>
               <p className='my-4'>
-                Understanding the reference points of the previous day's highs and lows is crucial for predicting the likely direction of the next trading day, whether it's a continuation or reversal of the trend.
+                Understanding the reference points of the previous day&apos;s highs and lows is crucial for predicting the likely direction of the next trading day, whether it&apos;s a continuation or reversal of the trend.
               </p>
               <p className='my-4'>
                 One of the standout features of this indicator is its adaptability. You can customize the appearance of the lines to suit your chart design and adjust their intensity as needed.
@@ -73,7 +67,7 @@ export function Indicators() {
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
                 <li className="flex gap-x-3">
                   <span className='text-gray-100 ml-5'>
-                    <strong className="font-semibold text-gray-50">UTC OFFSET:</strong>{" "}
+                    <strong className="font-semibold text-gray-50">UTC OFFSET:</strong>{' '}
                     Set your timezone here to ensure accurate time references.
                   </span>
                 </li>
