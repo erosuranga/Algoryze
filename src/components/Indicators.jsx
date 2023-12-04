@@ -86,13 +86,13 @@ export function Indicators() {
                 <li className="flex gap-x-3">
                   <span className='text-gray-100 ml-5'>
                     <strong className="font-semibold text-gray-50">PREVIOUS HIGHS & LOWS:</strong>{' '}
-                    Customize the appearance of the lines representing previous day's highs and lows, including color, style, width, and text color.
+                    Customize the appearance of the lines representing previous day&apos;s highs and lows, including color, style, width, and text color.
                   </span>
                 </li>
               </ul>
 
               <p className='my-8'>
-                With the Previous Day High and Low + Separators Daily/Weekly indicator, you can enhance your trading analysis by visually tracking important reference points and adapt the indicator to your chart's aesthetics and requirements.
+                With the Previous Day High and Low + Separators Daily/Weekly indicator, you can enhance your trading analysis by visually tracking important reference points and adapt the indicator to your chart&apos;s aesthetics and requirements.
               </p>
             </div>
           </div>
