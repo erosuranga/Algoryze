@@ -17,14 +17,13 @@ export function Hero() {
         </div>
 
         <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
-
           <span className="sr-only">Algoryze - </span>
 
           <div className="text-box">
-            <h1 className="fixed-text text-center font-display text-5xl  font-bold uppercase tracking-tighter text-gray-50 sm:text-8xl">
+            <h1 className="fixed-text text-center font-display text-5xl  font-semibold uppercase tracking-normal text-gray-50 sm:text-8xl">
               Automatiza <br /> tu
             </h1>
-            <div className="animate-text">
+            <div className="animate-text font-semibold">
               <div>
                 <span className='mx-auto'>TRAIDING</span>
                 <span className='mx-auto'>MONEY</span>
@@ -35,7 +34,6 @@ export function Hero() {
           <div className="mt-6 space-y-6 text-center font-display text-2xl tracking-tight text-gray-50">
             La nueva generacion del trading autoamtizado de la maano de
             algorize, unete para aumetnar tus rendimientos de una manera sideral
-
           </div>
           {/* 
             <p>

@@ -49,9 +49,11 @@ export function FrequentlyAskedQuestions() {
 
         {/** title */}
 
-        <h2 className="gradient-text font-display text-4xl font-medium tracking-normal sm:text-5xl">
-          Preguntas Frecuentes
-        </h2>
+        <div className="mx-auto max-w-xl text-center">
+          <h2 className="gradient-text font-display text-4xl font-medium tracking-normal sm:text-5xl">
+            Preguntas frecuentes
+          </h2>
+        </div>
 
         {/** content */}
         <div className="mx-auto max-w-4xl divide-y divide-yellow-900/10">
