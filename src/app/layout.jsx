@@ -34,8 +34,7 @@ export default function RootLayout({ children }) {
       lang="en"
       className={clsx('h-full ', myFont.className)}
     >
-      <body className="flex min-h-full bg-[#151823]">
-        sss
+      <body className="flex min-h-full bg-[#151823]">        
         <div className="flex w-full flex-col">{children}</div>
       </body>
     </html>
