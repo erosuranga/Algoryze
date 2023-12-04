@@ -53,7 +53,7 @@ export function Testimonials() {
 
         {/** Title */}
         <div className="mx-auto max-w-xl text-center">
-          <h2 className="gradient-text font-display text-4xl font-medium tracking-normal sm:text-5xl">
+          <h2 className="text-yellow-400 font-display text-4xl font-medium tracking-normal sm:text-5xl">
             Trusted by over
             <div className="users">+50,000 users</div>
           </h2>

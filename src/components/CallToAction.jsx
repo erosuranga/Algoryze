@@ -91,18 +91,18 @@ export function CallToAction() {
             TOP #1
           </h2>
 
-          <span className="gradient-text ml-2 mt-4 font-display text-3xl tracking-tight">
+          <span className="ml-2 mt-4 font-display text-3xl tracking-tight">
             INDICADOR
           </span>
 
-          <span className="gradient-text ml-2 font-display text-3xl tracking-tight text-transparent">
+          <span className="ml-2 font-display text-3xl tracking-tight text-transparent">
             INSTITUCIONAL
           </span>
 
           <span className="ml-2   font-display text-3xl tracking-tight text-gray-50">
             <span
               id="mySection"
-              className="gradient-text inline-block align-top"
+              className="inline-block align-top"
             >
               <Counter />
             </span>
