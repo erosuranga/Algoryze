@@ -49,7 +49,7 @@ export function FrequentlyAskedQuestions() {
 
         {/** title */}
 
-        <h2 className="gradient-text text-center font-display text-9xl font-medium tracking-tighter hover:text-gray-50 sm:text-5xl">
+        <h2 className="gradient-text text-center font-display text-9xl font-medium tracking-normal hover:text-gray-50 sm:text-5xl">
           Preguntas Frecuentes
         </h2>
 
@@ -61,8 +61,8 @@ export function FrequentlyAskedQuestions() {
                 {({ open }) => (
                   <>
                     <dt>
-                      <Disclosure.Button className="gradient-text flex w-full items-start justify-between text-left hover:text-gray-50 ">
-                        <span className="text-base font-semibold leading-7 tracking-wide">
+                      <Disclosure.Button className="gradient-text flex w-full items-start justify-between text-left hover:text-gray-100 ">
+                        <span className="text-base font-medium leading-7 tracking-wide">
                           {faq.question}
                         </span>
                         <span className="ml-6 flex h-7 items-center">
