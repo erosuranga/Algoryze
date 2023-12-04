@@ -68,7 +68,7 @@ export function Testimonials() {
                 key={index}
                 className="h-full grow pt-8 sm:inline-block sm:w-full sm:px-4"
               >
-                <figure className=" h-full rounded-2xl border border-yellow-400 bg-[#1d2028] p-8 text-sm leading-6">
+                <figure className=" h-full rounded-2xl border border-[#fcd600] bg-[#1d2028] p-8 text-sm leading-6">
                   <blockquote className="text-xl font-semibold text-gray-50">
                     <p>{`${testimonial.author.name}`}</p>
                   </blockquote>

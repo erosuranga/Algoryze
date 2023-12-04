@@ -49,7 +49,7 @@ export function FrequentlyAskedQuestions() {
 
         {/** title */}
 
-        <h2 className="gradient-text text-center font-display text-9xl font-medium tracking-tighter hover:text-gray-50 sm:text-5xl">
+        <h2 className="gradient-text text-center font-display text-9xl font-medium tracking-normal hover:text-gray-50 sm:text-5xl">
           Preguntas Frecuentes
         </h2>
 
