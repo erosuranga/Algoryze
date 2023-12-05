@@ -7,34 +7,36 @@ export function Hero() {
   return (
     <div className="relative py-20 sm:pb-24 sm:pt-36">
       <Container className="relative">
-        
-        <div className='ripple-background'>
-          <div className='circle xxlarge shade1'></div>
-          <div className='circle xlarge shade2'></div>
-          <div className='circle large shade3'></div>
-          <div className='circle mediun shade4'></div>
-          <div className='circle small shade5'></div>
+        <div className="ripple-background absolut z-40">
+          <div className="circle xxlarge shade1"></div>
+          <div className="circle xlarge shade2"></div>
+          <div className="circle large shade3"></div>
+          <div className="circle mediun shade4"></div>
+          <div className="circle small shade5 "></div>
         </div>
 
-        <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
+        <div className=" mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
           <span className="sr-only">Algoryze - </span>
 
-          <div className="text-box">
-            <h1 className="fixed-text text-center font-display text-5xl  font-semibold uppercase tracking-normal text-gray-50 sm:text-8xl">
+          <div className="text-box  w-full text-center">
+            <h1 className="  relative z-50  inline-block text-center font-display text-5xl font-light uppercase tracking-normal text-gray-50 sm:text-8xl">
               Automatiza <br /> tu
             </h1>
             <div className="animate-text font-semibold">
-              <div>
-                <span className='mx-auto'>TRAIDING</span>
-                <span className='mx-auto'>MONEY</span>
-                <span className='mx-auto'>TIME</span>
+              <div className="">
+                <span className=" mx-auto">TRAIDING</span>
+                <span className="mx-auto">MONEY</span>
+                <span className="mx-auto">TIME</span>
               </div>
             </div>
           </div>
-          <div className="mt-6 space-y-6 text-center font-display text-2xl tracking-tight text-gray-50">
-            La nueva generacion del trading autoamtizado de la maano de
-            algorize, unete para aumetnar tus rendimientos de una manera sideral
-          </div>
+
+          <p className="text-1xl  relative z-50 mt-6 text-center font-light leading-8 text-gray-100">
+            This indicator is a powerful tool designed for traders on
+            TradingView. This indicator utilizes separators to distinguish
+            between trading days and weeks, all while highlighting the previous
+            day&apos;s high and low points with clear lines on your chart.
+          </p>
           {/* 
             <p>
               At DeceptiConf you’ll learn about the latest dark patterns being

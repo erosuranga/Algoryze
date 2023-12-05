@@ -6,12 +6,14 @@ import { Testimonials } from '@/components/Testimonials'
 import { Sponsors } from '@/components/Sponsors'
 import { FrequentlyAskedQuestions } from '@/components/FAQs'
 import { Indicators } from '@/components/Indicators'
+import { Cta } from '@/components/CTA'
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <CallToAction />
+      <Cta />
+      {/*    <CallToAction /> */}
       <Testimonials />
 
       <Indicators />

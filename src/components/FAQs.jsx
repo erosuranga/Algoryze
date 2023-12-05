@@ -5,6 +5,7 @@ import { Disclosure } from '@headlessui/react'
 import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
 import Isotipo from '../images/logos/isotipo_golden.png'
 import '../styles/colortext.css'
+import '../styles/faqs.css'
 
 const faqs = [
   {
@@ -46,24 +47,21 @@ export function FrequentlyAskedQuestions() {
             className="h-16 w-auto text-gray-100"
           />
         </div>
-
-        {/** title */}
-
+        {/** title */}{' '}
         <div className="mx-auto max-w-xl text-center">
-          <h2 className="font-display text-4xl font-medium tracking-normal sm:text-5xl">
+          <h2 className=" font-display text-4xl font-medium tracking-normal text-yellow-400 sm:text-5xl">
             Preguntas frecuentes
           </h2>
         </div>
-
         {/** content */}
-        <div className="mx-auto max-w-4xl divide-y divide-yellow-900/10">
+        <div className="relative mx-auto max-w-4xl divide-y divide-yellow-900/10">
           <dl className="mt-10 space-y-6 divide-y divide-yellow-400/10">
             {faqs.map((faq) => (
               <Disclosure as="div" key={faq.question} className="pt-6">
                 {({ open }) => (
                   <>
                     <dt>
-                      <Disclosure.Button className="gradient-text flex w-full items-start justify-between text-left hover:text-gray-100 ">
+                      <Disclosure.Button className=" flex w-full items-start justify-between text-left text-yellow-400 hover:text-gray-100">
                         <span className="text-base font-medium leading-7 tracking-wide">
                           {faq.question}
                         </span>
