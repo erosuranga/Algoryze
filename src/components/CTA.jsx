@@ -1,3 +1,6 @@
+import Image from 'next/image'
+import MacbookTrading from '@/images/macbook_trading.png'
+
 export function Cta() {
   return (
     <div className="bg-[#151823]">
@@ -23,34 +26,36 @@ export function Cta() {
             </defs>
           </svg>
           <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Boost your productivity.
+            <h2 className="text-5xl font-semibold tracking-tight text-yellow-400 sm:text-4xl">
+              TOP #1
               <br />
-              Start using our app today.
+              INDICADOR INSTITUCIONAL
             </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-300">
-              Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
-              Malesuada adipiscing sagittis vel nulla.
+            <p className="mt-6 text-lg leading-8 text-gray-50">
+              Descubre la excelencia con nuestro destacado indicador
+              institucional. En nuestro compromiso con la calidad,
+              proporcionamos información valiosa que impulsa el éxito y la
+              confianza en cada paso.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
               <a
                 href="#"
-                className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                className="animate-bounce rounded-md bg-[#92400e] px-3.5 py-2.5 text-lg font-semibold text-gray-200 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
-                Get started
+                Suscribirme
               </a>
-              <a
+              {/* <a
                 href="#"
                 className="text-sm font-semibold leading-6 text-white"
               >
                 Learn more <span aria-hidden="true">→</span>
-              </a>
+              </a> */}
             </div>
           </div>
           <div className="relative mt-16 h-80 lg:mt-8">
             <img
               className="absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
-              src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
+              src="https://s3.tradingview.com/snapshots/d/d8dnXvmQ.png"
               alt="App screenshot"
               width={1824}
               height={1080}
