@@ -50,7 +50,7 @@ export function FrequentlyAskedQuestions() {
         {/** title */}
 
         <div className="mx-auto max-w-xl text-center">
-          <h2 className="font-display text-4xl font-medium tracking-normal sm:text-5xl">
+          <h2 className="gradient-text font-display text-4xl font-medium tracking-normal text-yellow-400 sm:text-5xl">
             Preguntas frecuentes
           </h2>
         </div>

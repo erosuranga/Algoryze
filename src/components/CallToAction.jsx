@@ -100,10 +100,7 @@ export function CallToAction() {
           </span>
 
           <span className="ml-2   font-display text-3xl tracking-tight text-gray-50">
-            <span
-              id="mySection"
-              className="inline-block align-top"
-            >
+            <span id="mySection" className="inline-block align-top">
               <Counter />
             </span>
           </span>
