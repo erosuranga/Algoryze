@@ -73,7 +73,7 @@ export function CallToAction() {
     <section
       id="schedule"
       aria-label="Schedule"
-      className="grid h-screen grid-cols-2 py-20 sm:py-32"
+      className="mt-6 grid h-screen grid-cols-2 py-20 sm:py-32"
     >
       <Container className="relative z-10">
         {/** topbar */}
@@ -86,17 +86,13 @@ export function CallToAction() {
         </div>
 
         {/** title */}
-        <div className="flex flex-col">
+        <div className="flex flex-col ">
           <h2 className="font-display text-7xl font-medium tracking-tighter text-gray-50 sm:text-7xl">
             TOP #1
           </h2>
 
           <span className="ml-2 mt-4 font-display text-3xl tracking-tight">
-            INDICADOR
-          </span>
-
-          <span className="ml-2 font-display text-3xl tracking-tight text-transparent">
-            INSTITUCIONAL
+            INDICADOR INSTITUCIONAL
           </span>
 
           <span className="ml-2   font-display text-3xl tracking-tight text-gray-50">

@@ -1,60 +1,60 @@
 export function Cta() {
   return (
-    <div className="overflow-hidden bg-[#151823] py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:flex lg:px-8">
-        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:min-w-full lg:max-w-none lg:flex-none lg:gap-y-8">
-          <div className="lg:col-end-1 lg:w-full lg:max-w-lg lg:pb-8">
-            <h2 className="relative z-50 text-right text-3xl font-bold tracking-tight text-yellow-400 sm:text-4xl">
-              TOP#1
+    <div className="bg-[#151823]">
+      <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
+        <div className="relative isolate overflow-hidden bg-[#151823] px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+          <svg
+            viewBox="0 0 1024 1024"
+            className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
+            aria-hidden="true"
+          >
+            <circle
+              cx={512}
+              cy={512}
+              r={512}
+              fill="url(#759c1415-0410-454c-8f7c-9a820de03641)"
+              fillOpacity="0.7"
+            />
+            <defs>
+              <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
+                <stop stopColor="#92400e" />
+                <stop offset={1} stopColor="#92400e" />
+              </radialGradient>
+            </defs>
+          </svg>
+          <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              Boost your productivity.
+              <br />
+              Start using our app today.
             </h2>
-            <p className="relative z-50 mt-6 text-right text-2xl leading-8 text-gray-50">
-              INDICADOR INSTITUCIONAL
+            <p className="mt-6 text-lg leading-8 text-gray-300">
+              Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
+              Malesuada adipiscing sagittis vel nulla.
             </p>
-            <p className="mt-6 text-right text-base leading-7 text-gray-50">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-              lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-              fugiat. Quasi aperiam sit non sit neque reprehenderit.
-            </p>
-            <div className="mt-10 flex">
+            <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
               <a
                 href="#"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 "
+                className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
-                Join our team <span aria-hidden="true">&rarr;</span>
+                Get started
+              </a>
+              <a
+                href="#"
+                className="text-sm font-semibold leading-6 text-white"
+              >
+                Learn more <span aria-hidden="true">→</span>
               </a>
             </div>
           </div>
-          <div className="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
-            <div className="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end">
-              <img
-                src="https://images.unsplash.com/photo-1670272502246-768d249768ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1152&q=80"
-                alt=""
-                className="aspect-[7/5] w-[37rem] max-w-none rounded-2xl bg-gray-50 object-cover"
-              />
-            </div>
-            <div className="contents lg:col-span-2 lg:col-end-2 lg:ml-auto lg:flex lg:w-[37rem] lg:items-start lg:justify-end lg:gap-x-8">
-              <div className="order-first flex w-64 flex-none justify-end self-end lg:w-auto">
-                <img
-                  src="https://images.unsplash.com/photo-1605656816944-971cd5c1407f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=768&h=604&q=80"
-                  alt=""
-                  className="aspect-[4/3] w-[24rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover"
-                />
-              </div>
-              <div className="flex w-96 flex-auto justify-end lg:w-auto lg:flex-none">
-                <img
-                  src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1152&h=842&q=80"
-                  alt=""
-                  className="aspect-[7/5] w-[37rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover"
-                />
-              </div>
-              <div className="hidden sm:block sm:w-0 sm:flex-auto lg:w-auto lg:flex-none">
-                <img
-                  src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=768&h=604&q=80"
-                  alt=""
-                  className="aspect-[4/3] w-[24rem] max-w-none rounded-2xl bg-gray-50 object-cover"
-                />
-              </div>
-            </div>
+          <div className="relative mt-16 h-80 lg:mt-8">
+            <img
+              className="absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
+              src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
+              alt="App screenshot"
+              width={1824}
+              height={1080}
+            />
           </div>
         </div>
       </div>

@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <Hero />
       <Cta />
-      <CallToAction />
+      {/*    <CallToAction /> */}
       <Testimonials />
 
       <Indicators />
