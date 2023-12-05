@@ -33,6 +33,16 @@ const faqs = [
     answer:
       'Actualmente, Algorize no ofrece códigos de descuento públicos. Sin embargo, te recomendamos estar atento a las promociones y ofertas especiales que puedan lanzar en el futuro. También puedes ponerte en contacto con el equipo de soporte de Algorize para obtener información sobre posibles descuentos o promociones disponibles.',
   },
+  {
+    question: '¿Puedo obtener un código de descuento?',
+    answer:
+      'Actualmente, Algorize no ofrece códigos de descuento públicos. Sin embargo, te recomendamos estar atento a las promociones y ofertas especiales que puedan lanzar en el futuro. También puedes ponerte en contacto con el equipo de soporte de Algorize para obtener información sobre posibles descuentos o promociones disponibles.',
+  },
+  {
+    question: '¿Puedo obtener un código de descuento?',
+    answer:
+      'Actualmente, Algorize no ofrece códigos de descuento públicos. Sin embargo, te recomendamos estar atento a las promociones y ofertas especiales que puedan lanzar en el futuro. También puedes ponerte en contacto con el equipo de soporte de Algorize para obtener información sobre posibles descuentos o promociones disponibles.',
+  },
 ]
 
 export function FrequentlyAskedQuestions() {
