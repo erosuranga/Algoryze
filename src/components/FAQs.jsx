@@ -64,8 +64,8 @@ export function FrequentlyAskedQuestions() {
           </h2>
         </div>
         {/** content */}
-        <div className="relative mx-auto max-w-4xl divide-y divide-yellow-900/10">
-          <dl className="mt-10 space-y-6 divide-y divide-yellow-400/10">
+        <div className="relative mx-auto max-w-4xl divide-y divide-yellow-900/10 shadow-2xl">
+          <dl className="ml-5 mr-5 mt-10 space-y-6 divide-y divide-yellow-400 ">
             {faqs.map((faq) => (
               <Disclosure as="div" key={faq.question} className="pt-6">
                 {({ open }) => (
