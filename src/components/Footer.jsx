@@ -101,7 +101,7 @@ export function Footer() {
             <a
               key={item.name}
               href={item.href}
-              className="text-yellow-500 hover:text-gray-500"
+              className="text-[#FFA101] hover:text-gray-500"
             >
               <span className="sr-only">{item.name}</span>
               <item.icon className="h-6 w-6" aria-hidden="true" />

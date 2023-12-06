@@ -19,14 +19,8 @@
 
   display: block;
   text-align: center;
-  color: transparent;
+  color: #ffa101;
   background-clip: text;
-  background-image: linear-gradient(
-    to top,
-
-    #4e4e4ec0,
-    #92400e
-  );
 }
 .animate-text span:after {
   content: '';
@@ -73,7 +67,7 @@
 .circle {
   position: absolute;
   border-radius: 50%;
-  background-image: linear-gradient(to top, #92400e, #92400e);
+  background-image: linear-gradient(to top, #fae6b1, #fae6b1);
   animation: ripple 5s infinite;
   box-shadow: 0px 0px 1px 0px #508fb9;
 }

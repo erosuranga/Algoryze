@@ -53,7 +53,7 @@ export function Testimonials() {
 
         {/** Title */}
         <div className="mx-auto max-w-xl text-center">
-          <h2 className="font-display text-4xl font-light tracking-normal text-yellow-400 sm:text-5xl">
+          <h2 className="font-display text-4xl font-light tracking-normal text-[#FFA101] sm:text-5xl">
             Trusted by over
             <div className="users">+50,000 users</div>
           </h2>
@@ -68,14 +68,14 @@ export function Testimonials() {
                 key={index}
                 className="h-full grow pt-8 sm:inline-block sm:w-full sm:px-4"
               >
-                <figure className="  h-full rounded-2xl border bg-[#1d2028] p-8 text-sm leading-6 shadow-lg shadow-[#92400e]">
+                <figure className="  h-full rounded-2xl border bg-[#1d2028] p-8 text-sm leading-6 shadow-lg shadow-[#FAE6B1]">
                   <blockquote className="text-xl font-semibold text-gray-50">
                     <p>{`${testimonial.author.name}`}</p>
                   </blockquote>
                   <blockquote className="text-gray-100">
                     <p>{`“${testimonial.body}”`}</p>
                   </blockquote>
-                  <div className="items-cente mt-2 flex fill-current text-yellow-400">
+                  <div className="items-cente mt-2 flex fill-current text-[#FFA101]">
                     {[1, 2, 3, 4, 5].map((star) => '⭐️ ')}
                   </div>
                   <figcaption className="mt-6 flex items-center gap-x-4">

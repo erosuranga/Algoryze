@@ -5,7 +5,8 @@
     to right,
     hsl(51, 3%, 17%) 0,
     hwb(51 3% 17%) 12%,
-    hwb(51 2% 35%) 20%
+    hwb(51 2% 35%) 20%,
+    #ffa101
   );
   background-clip: text;
   -webkit-background-clip: text;

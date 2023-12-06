@@ -14,7 +14,7 @@ export function Indicators() {
     <div className="relative isolate overflow-hidden bg-[#151823] px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <svg
-          className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-yellow-800 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
+          className="absolute left-[max(50%,25rem)] top-0  h-[64rem] w-[128rem] -translate-x-1/2 stroke-[#FAE6B1] [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
           aria-hidden="true"
         >
           <defs>
@@ -47,10 +47,10 @@ export function Indicators() {
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="lg:max-w-lg">
-              <p className="text-base font-semibold leading-7 text-yellow-500">
+              <p className="text-base font-semibold leading-7 text-[#FFA101]">
                 Analyze faster
               </p>
-              <h1 className="mt-2 text-3xl font-bold tracking-tight text-yellow-400 sm:text-4xl">
+              <h1 className="relative z-50 mt-2 text-3xl font-bold tracking-tight text-[#FFA101] sm:text-4xl">
                 Algoryze Indicators
               </h1>
               <h2 className="mt-10 text-xl font-bold tracking-tight text-gray-50 sm:text-xl">
@@ -68,7 +68,7 @@ export function Indicators() {
         </div>
         <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
           <img
-            className="h-full w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl shadow-[#92400d] ring-1 ring-gray-400/10 sm:w-[57rem]"
+            className="h-full w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl shadow-[#FAE6B1] ring-1 ring-gray-400/10 sm:w-[57rem]"
             src="https://s3.tradingview.com/snapshots/d/d8dnXvmQ.png"
             alt=""
           />

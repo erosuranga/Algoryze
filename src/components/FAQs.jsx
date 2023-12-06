@@ -59,19 +59,19 @@ export function FrequentlyAskedQuestions() {
         </div>
         {/** title */}{' '}
         <div className="mx-auto max-w-xl text-center">
-          <h2 className=" font-display text-4xl font-medium tracking-normal text-yellow-400 sm:text-5xl">
+          <h2 className=" font-display text-4xl font-medium tracking-normal text-[#FFA101] sm:text-5xl">
             Preguntas frecuentes
           </h2>
         </div>
         {/** content */}
         <div className="relative mx-auto max-w-4xl divide-y divide-yellow-900/10 shadow-2xl">
-          <dl className="ml-5 mr-5 mt-10 space-y-6 divide-y divide-yellow-400 ">
+          <dl className="ml-5 mr-5 mt-10 space-y-6 divide-y divide-[#FAE6B1] ">
             {faqs.map((faq) => (
               <Disclosure as="div" key={faq.question} className="pt-6">
                 {({ open }) => (
                   <>
                     <dt>
-                      <Disclosure.Button className=" flex w-full items-start justify-between text-left text-yellow-400 hover:text-gray-100">
+                      <Disclosure.Button className=" flex w-full items-start justify-between text-left text-[#FFA101] hover:text-gray-300">
                         <span className="text-base font-medium leading-7 tracking-wide">
                           {faq.question}
                         </span>
