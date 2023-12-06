@@ -1,6 +1,11 @@
+"use client"
+
+import { Fragment, useEffect, useRef, useState } from 'react'
 import '../styles/colortext.css'
 import Image from 'next/image'
 import Isotipo from '../images/logos/isotipo_golden.png'
+import MacbookTrading from '@/images/macbook_trading.png'
+import { Transition } from '@headlessui/react'
 
 const stats = [
   { label: 'Founded', value: '2021' },
@@ -8,6 +13,60 @@ const stats = [
   { label: 'Countries', value: '12' },
   { label: 'Raised', value: '$25M' },
 ]
+
+const SlideFromRight = () => {
+  const [isInViewport, setIsInViewport] = useState(false)
+  const elementRef = useRef(null)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        // Check if the target element is in the viewport
+        if (entries[0].isIntersecting) {
+          setIsInViewport(true)
+        } else {
+          setIsInViewport(false)
+        }
+      },
+      {
+        // Root is the viewport by default
+        root: null,
+        // 0% means the element becomes visible as soon as any part of it enters the viewport
+        threshold: 0.5,
+      },
+    )
+
+    // Start observing the target element
+    if (elementRef.current) {
+      observer.observe(elementRef.current)
+    }
+
+    // Cleanup: stop observing when the component unmounts
+    return () => {
+      if (elementRef.current) {
+        observer.unobserve(elementRef.current)
+      }
+    }
+  }, [])
+
+  return (
+    <div ref={elementRef} className="relative">
+      <Transition.Root show={isInViewport} as={Fragment}>
+        <Transition.Child
+          as={Fragment}
+          enter="transform transition ease-in-out duration-500 sm:duration-700"
+          enterFrom="translate-x-full"
+          enterTo="translate-x-0"
+          leave="transform transition ease-in-out duration-500 sm:duration-700"
+          leaveFrom="translate-x-0"
+          leaveTo="translate-x-full"
+        >
+          <img className="h-full w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-2xl shadow-gray-950 ring-1 ring-gray-400/10 sm:w-[57rem]" src="https://s3.tradingview.com/snapshots/d/d8dnXvmQ.png" alt=""/>
+        </Transition.Child>
+      </Transition.Root>
+    </div>
+  )
+}
 
 export function Indicators() {
   return (
@@ -67,7 +126,7 @@ export function Indicators() {
           </div>
         </div>
         <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-          <img className="h-full w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-2xl shadow-gray-950 ring-1 ring-gray-400/10 sm:w-[57rem]" src="https://s3.tradingview.com/snapshots/d/d8dnXvmQ.png" alt=""/>
+          <SlideFromRight />
         </div>
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
