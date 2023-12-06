@@ -19,7 +19,7 @@ export function Hero() {
           <span className="sr-only">Algoryze - </span>
 
           <div className="text-box  w-full text-center">
-            <h1 className="  relative z-50  inline-block text-center font-display text-5xl font-light uppercase tracking-normal text-gray-50 sm:text-8xl">
+            <h1 className="  relative z-50  inline-block text-center font-display text-5xl font-light uppercase tracking-normal text-gray-100 sm:text-8xl">
               Automatiza <br /> tu
             </h1>
             <div className="animate-text font-semibold">

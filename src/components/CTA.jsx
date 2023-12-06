@@ -17,13 +17,13 @@ export function Cta() {
             />
             <defs>
               <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
-                <stop stopColor="#92400e" />
+                <stop stopColor="#FAE6B1" />
                 <stop offset={1} stopColor="#92400e" />
               </radialGradient>
             </defs>
           </svg>
           <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
-            <h2 className="text-5xl font-semibold tracking-tight text-yellow-400 sm:text-4xl">
+            <h2 className="text-5xl font-semibold tracking-tight text-[#FFA101] sm:text-4xl">
               TOP #1
               <br />
               INDICADOR INSTITUCIONAL
@@ -37,7 +37,7 @@ export function Cta() {
             <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
               <a
                 href="#"
-                className="animate-bounce rounded-md bg-[#92400e] px-3.5 py-2.5 text-lg font-semibold text-gray-200 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                className="animate-bounce rounded-md bg-[#FFA101] px-3.5 py-2.5 text-lg font-semibold text-gray-200 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 Suscribirme
               </a>
