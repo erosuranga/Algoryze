@@ -1,8 +1,8 @@
 export function Cta() {
   return (
-    <div className=" bg-[#151823]">
+    <div className="bg-[#151823]">
       <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
-        <div className="relative isolate overflow-hidden bg-[#151823] px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+        <div className="shadow-2xl shadow-gray-950 relative isolate overflow-hidden bg-[#151823] px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
           <svg
             viewBox="0 0 1024 1024"
             className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
@@ -35,11 +35,8 @@ export function Cta() {
               confianza en cada paso.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-              <a
-                href="#"
-                className="animate-bounce rounded-md bg-[#FFA101] px-3.5 py-2.5 text-lg font-semibold text-gray-200 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-              >
-                Suscribirme
+              <a href="#" className="ml-8 animate-bounce rounded-md bg-[#FFA101] hover:bg-[#e59000] px-3.5 py-2.5 text-lg font-semibold text-gray-900 shadow-xl shadow-gray-950 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                Comenzar
               </a>
               {/* <a
                 href="#"

@@ -67,7 +67,7 @@
 .circle {
   position: absolute;
   border-radius: 50%;
-  background-image: linear-gradient(to top, #fae6b1, #fae6b1);
+  background-image: linear-gradient(to top, #daa617, #dda406);
   animation: ripple 5s infinite;
   box-shadow: 0px 0px 1px 0px #508fb9;
 }
