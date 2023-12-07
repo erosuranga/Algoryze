@@ -5,7 +5,6 @@ import { Disclosure } from '@headlessui/react'
 import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
 import Isotipo from '../images/logos/isotipo_golden.png'
 import '../styles/colortext.css'
-import '../styles/faqs.css'
 
 const faqs = [
   {
@@ -47,7 +46,7 @@ const faqs = [
 
 export function FrequentlyAskedQuestions() {
   return (
-    <div className="bg-[#151823]">
+    <div className="clsx bg-[#151823]">
       <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
         {/** topbar */}
         <div className="h-16">
@@ -59,19 +58,19 @@ export function FrequentlyAskedQuestions() {
         </div>
         {/** title */}{' '}
         <div className="mx-auto max-w-xl text-center">
-          <h2 className=" font-display text-4xl font-medium tracking-normal text-[#FFA101] sm:text-5xl">
-            Preguntas frecuentes
+          <h2 className="     text-4xl font-extrabold tracking-wider text-[#efb810] sm:text-5xl">
+            Preguntas Frecuentes
           </h2>
         </div>
         {/** content */}
-        <div className="relative mx-auto max-w-4xl divide-y divide-yellow-900/10 shadow-2xl">
+        <div className="font-AkzidenzLight relative mx-auto max-w-4xl divide-y divide-yellow-900/10 font-bold shadow-2xl">
           <dl className="ml-5 mr-5 mt-10 space-y-6 divide-y divide-[#FAE6B1] ">
             {faqs.map((faq) => (
               <Disclosure as="div" key={faq.question} className="pt-6">
                 {({ open }) => (
                   <>
                     <dt>
-                      <Disclosure.Button className=" flex w-full items-start justify-between text-left text-[#FFA101] hover:text-gray-300">
+                      <Disclosure.Button className=" flex w-full items-start justify-between text-left text-[#efb810] hover:text-gray-300">
                         <span className="text-base font-medium leading-7 tracking-wide">
                           {faq.question}
                         </span>
