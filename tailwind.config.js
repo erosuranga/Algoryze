@@ -27,6 +27,9 @@ module.exports = {
       fontFamily: {
         sans: 'var(--font-inter)',
         display: 'var(--font-dm-sans)',
+        custom: 'var(--font-my-font)',
+        titleFont: ['Akzidenz grotesk', 'bold'],
+        AkzidenzLight: ['Akzidenz grotesk', 'Light'],
       },
       maxWidth: {
         '2xl': '40rem',

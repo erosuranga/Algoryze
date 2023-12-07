@@ -17,7 +17,9 @@ const dmSans = DM_Sans({
   variable: '--font-dm-sans',
 })
 
-const myFont = localFont({ src: './Akzidenz-Grotesk-bold.ttf' })
+const myFont = localFont({
+  src: './Akzidenz-Grotesk-bold.ttf',
+})
 
 export const metadata = {
   title: {
@@ -30,11 +32,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="en"
-      className={clsx('h-full ', myFont.className)}
-    >
-      <body className="flex min-h-full bg-[#151823]">        
+    <html lang="en" className={clsx('h-full ', myFont.className)}>
+      <body className="flex min-h-full bg-[#151823]">
         <div className="flex w-full flex-col">{children}</div>
       </body>
     </html>

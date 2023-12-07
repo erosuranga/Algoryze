@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Akzidenz grotesk';
+  src: url('../Fonts/FontsFree-Net-Akzidenz-grotesk-bold.ttf');
+}
+
+@font-face {
+  font-family: 'Akzidenz grotesk';
+  src: url('../Fonts/AkzidenzGrotesk-LightExtended\ \(1\).otf');
+}

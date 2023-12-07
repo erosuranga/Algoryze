@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import { Fragment, useEffect, useRef, useState } from 'react'
 import '../styles/colortext.css'
@@ -61,7 +61,11 @@ const SlideFromRight = () => {
           leaveFrom="translate-x-0"
           leaveTo="translate-x-full"
         >
-          <img className="h-full w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-2xl shadow-gray-950 ring-1 ring-gray-400/10 sm:w-[57rem]" src="https://s3.tradingview.com/snapshots/d/d8dnXvmQ.png" alt=""/>
+          <img
+            className="h-full w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-2xl shadow-gray-950 ring-1 ring-gray-400/10 sm:w-[57rem]"
+            src="https://s3.tradingview.com/snapshots/d/d8dnXvmQ.png"
+            alt=""
+          />
         </Transition.Child>
       </Transition.Root>
     </div>
@@ -109,7 +113,7 @@ export function Indicators() {
               <p className="text-base font-semibold leading-7 text-[#FFA101]">
                 Analyze faster
               </p>
-              <h1 className="relative z-50 mt-2 text-3xl font-bold tracking-tight text-[#FFA101] sm:text-4xl">
+              <h1 className="font-titleFont relative z-50 mt-2 text-3xl font-extrabold tracking-tight text-[#FFA101] sm:text-4xl">
                 Algoryze Indicators
               </h1>
               <h2 className="mt-10 text-xl font-bold tracking-tight text-gray-50 sm:text-xl">
