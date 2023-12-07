@@ -77,7 +77,7 @@ export function Indicators() {
     <div className="relative isolate overflow-hidden bg-[#151823] px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <svg
-          className="absolute left-[max(50%,25rem)] top-0  h-[64rem] w-[128rem] -translate-x-1/2 stroke-[#Ffa101] [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
+          className="absolute left-[max(50%,25rem)] top-0  h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-600 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
           aria-hidden="true"
         >
           <defs>
@@ -110,16 +110,16 @@ export function Indicators() {
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="lg:max-w-lg">
-              <p className="text-base font-semibold leading-7 text-[#FFA101]">
+              <p className=" text-xl font-bold leading-7 tracking-widest text-[#efb810]">
                 Analyze faster
               </p>
-              <h1 className="font-titleFont relative z-50 mt-2 text-3xl font-extrabold tracking-tight text-[#FFA101] sm:text-4xl">
+              <h1 className=" relative z-50 mt-2 text-3xl font-extrabold tracking-wider text-[#efb810] sm:text-5xl">
                 Algoryze Indicators
               </h1>
-              <h2 className="mt-10 text-xl font-bold tracking-tight text-gray-50 sm:text-xl">
+              <h2 className="font-AkzidenzLight mt-10 text-xl font-medium tracking-widest text-gray-50 sm:text-xl">
                 Previous Day High and Low + Separators Daily/Weekly
               </h2>
-              <p className="mt-6 leading-8 text-gray-100">
+              <p className="font-AkzidenzLight mt-6 font-medium leading-8   tracking-widest text-gray-100">
                 This indicator is a powerful tool designed for traders on
                 TradingView. This indicator utilizes separators to distinguish
                 between trading days and weeks, all while highlighting the
@@ -134,7 +134,7 @@ export function Indicators() {
         </div>
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
-            <div className="max-w-xl text-base leading-8 text-gray-100 lg:max-w-lg">
+            <div className="font-AkzidenzLight max-w-xl text-base font-medium leading-8 tracking-widest text-gray-100 lg:max-w-lg">
               <p>
                 By marking each day of the week at the top of your chart, it
                 provides a visual reference for the time within your trading
