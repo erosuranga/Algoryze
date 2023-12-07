@@ -19,7 +19,7 @@
 
   display: block;
   text-align: center;
-  color: #ffa101;
+  color: #ffd700;
   background-clip: text;
 }
 .animate-text span:after {
@@ -67,7 +67,7 @@
 .circle {
   position: absolute;
   border-radius: 50%;
-  background-image: linear-gradient(to top, #daa617, #dda406);
+  background-image: linear-gradient(to right, #ffd700, #ffd700);
   animation: ripple 5s infinite;
   box-shadow: 0px 0px 1px 0px #508fb9;
 }
