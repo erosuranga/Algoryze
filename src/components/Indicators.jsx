@@ -116,10 +116,10 @@ export function Indicators() {
               <h1 className=" relative z-50 mt-2 text-3xl font-extrabold tracking-wider text-[#efb810] sm:text-5xl">
                 Algoryze Indicators
               </h1>
-              <h2 className="font-AkzidenzLight mt-10 text-xl font-medium tracking-widest text-gray-50 sm:text-xl">
+              <h2 className="mt-10 font-AkzidenzLight text-xl font-medium tracking-widest text-gray-50 sm:text-xl">
                 Previous Day High and Low + Separators Daily/Weekly
               </h2>
-              <p className="font-AkzidenzLight mt-6 font-medium leading-8   tracking-widest text-gray-100">
+              <p className="mt-6 font-AkzidenzLight font-medium leading-8   tracking-widest text-gray-100">
                 This indicator is a powerful tool designed for traders on
                 TradingView. This indicator utilizes separators to distinguish
                 between trading days and weeks, all while highlighting the
@@ -134,7 +134,7 @@ export function Indicators() {
         </div>
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
-            <div className="font-AkzidenzLight max-w-xl text-base font-medium leading-8 tracking-widest text-gray-100 lg:max-w-lg">
+            <div className="max-w-xl font-AkzidenzLight text-base font-medium leading-8 tracking-widest text-gray-100 lg:max-w-lg">
               <p>
                 By marking each day of the week at the top of your chart, it
                 provides a visual reference for the time within your trading

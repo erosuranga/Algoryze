@@ -76,7 +76,7 @@ const navigation = {
 
 export function Footer() {
   return (
-    <footer className="bg-[#151823]">
+    <footer className="bg-[#151823] font-AkzidenzLight">
       <div className="mt-10   flex justify-center lg:mt-0 lg:grow lg:basis-0">
         <Logo className="h-12 w-auto text-gray-100 " />
       </div>
@@ -101,7 +101,7 @@ export function Footer() {
             <a
               key={item.name}
               href={item.href}
-              className="text-[#FFA101] hover:text-gray-500"
+              className="text-[#efb810] hover:text-gray-500"
             >
               <span className="sr-only">{item.name}</span>
               <item.icon className="h-6 w-6" aria-hidden="true" />

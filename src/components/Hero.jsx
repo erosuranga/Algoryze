@@ -19,7 +19,7 @@ export function Hero() {
           <span className="sr-only">Algoryze - </span>
 
           <div className="text-box  w-full text-center">
-            <h1 className="  relative z-50  inline-block text-center font-display text-5xl font-light uppercase tracking-normal text-gray-100 sm:text-8xl">
+            <h1 className="  relative z-50  inline-block text-center  text-5xl font-light uppercase  tracking-wider text-gray-100 sm:text-8xl">
               Automatiza <br /> tu
             </h1>
             <div className="animate-text font-semibold">
@@ -31,7 +31,7 @@ export function Hero() {
             </div>
           </div>
 
-          <p className="text-1xl  relative z-50 mt-6 text-center font-light leading-8 text-gray-100">
+          <p className="text-1xl  relative z-50 mt-6 text-center font-AkzidenzLight font-medium leading-8 text-gray-100">
             This indicator is a powerful tool designed for traders on
             TradingView. This indicator utilizes separators to distinguish
             between trading days and weeks, all while highlighting the previous
