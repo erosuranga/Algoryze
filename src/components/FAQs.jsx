@@ -58,7 +58,7 @@ export function FrequentlyAskedQuestions() {
         </div>
         {/** title */}{' '}
         <div className="mx-auto max-w-xl text-center">
-          <h2 className="     text-4xl font-extrabold tracking-wide text-[#efb810] sm:text-5xl">
+          <h2 className="     font-Optician text-4xl font-medium tracking-wide text-[#efb810] sm:text-5xl">
             Preguntas Frecuentes
           </h2>
         </div>
@@ -71,7 +71,7 @@ export function FrequentlyAskedQuestions() {
                   <>
                     <dt>
                       <Disclosure.Button className=" flex w-full items-start justify-between text-left text-[#efb810] hover:text-gray-300">
-                        <span className="text-base font-medium leading-7 tracking-wide">
+                        <span className="text-base font-medium leading-7 tracking-wider">
                           {faq.question}
                         </span>
                         <span className="ml-6 flex h-7 items-center">
@@ -90,7 +90,7 @@ export function FrequentlyAskedQuestions() {
                       </Disclosure.Button>
                     </dt>
                     <Disclosure.Panel as="dd" className="mt-4 pr-12">
-                      <p className="text-base font-light leading-7 text-gray-200">
+                      <p className="text-base font-light leading-7 tracking-widest text-gray-300">
                         {faq.answer}
                       </p>
                     </Disclosure.Panel>

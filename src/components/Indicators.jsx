@@ -110,10 +110,10 @@ export function Indicators() {
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="lg:max-w-lg">
-              <p className=" text-xl font-bold leading-7 tracking-widest text-[#efb810]">
+              <p className=" font-Optician text-xl font-bold leading-7 tracking-widest text-[#efb810]">
                 Analyze faster
               </p>
-              <h1 className=" relative z-50 mt-2 text-3xl font-extrabold tracking-wider text-[#efb810] sm:text-5xl">
+              <h1 className=" font-Optician relative z-50 mt-2 text-3xl font-medium tracking-wide text-[#efb810] sm:text-5xl">
                 Algoryze Indicators
               </h1>
               <h2 className="mt-10 font-AkzidenzLight text-xl font-medium tracking-widest text-gray-50 sm:text-xl">
@@ -132,7 +132,7 @@ export function Indicators() {
         <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
           <SlideFromRight />
         </div>
-        <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+        {/*  <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="max-w-xl font-AkzidenzLight text-base font-medium leading-8 tracking-widest text-gray-100 lg:max-w-lg">
               <p>
@@ -201,7 +201,7 @@ export function Indicators() {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   )

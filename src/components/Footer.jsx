@@ -76,7 +76,7 @@ const navigation = {
 
 export function Footer() {
   return (
-    <footer className="bg-[#151823] font-AkzidenzLight">
+    <footer className="bg-[#151823] font-AkzidenzLight font-medium tracking-widest">
       <div className="mt-10   flex justify-center lg:mt-0 lg:grow lg:basis-0">
         <Logo className="h-12 w-auto text-gray-100 " />
       </div>
