@@ -30,6 +30,7 @@ module.exports = {
         custom: 'var(--font-my-font)',
         titleFont: ['Akzidenz grotesk', 'bold'],
         AkzidenzLight: ['Akzidenz grotesk', 'Light'],
+        Optician: ['Optician Sans'],
       },
       maxWidth: {
         '2xl': '40rem',

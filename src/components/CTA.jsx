@@ -23,12 +23,12 @@ export function Cta() {
             </defs>
           </svg>
           <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
-            <h2 className="text-5xl font-semibold tracking-wide text-[#efb810] sm:text-4xl">
+            <h2 className="font-Optician text-5xl  font-medium tracking-wide text-[#efb810] sm:text-4xl">
               TOP #1
               <br />
               INDICADOR INSTITUCIONAL
             </h2>
-            <p className="mt-6 font-AkzidenzLight  text-base leading-8 tracking-wider text-gray-50">
+            <p className="mt-6 font-AkzidenzLight  text-base leading-8 tracking-widest text-gray-50">
               Descubre la excelencia con nuestro destacado indicador
               institucional. En nuestro compromiso con la calidad,
               proporcionamos información valiosa que impulsa el éxito y la

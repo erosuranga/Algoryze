@@ -31,7 +31,7 @@ export function Hero() {
             </div>
           </div>
 
-          <p className="text-1xl  relative z-50 mt-6 text-center font-AkzidenzLight font-medium leading-8 text-gray-100">
+          <p className="text-1xl  relative z-50 mt-6 text-center font-AkzidenzLight font-medium leading-8 tracking-widest text-gray-100">
             This indicator is a powerful tool designed for traders on
             TradingView. This indicator utilizes separators to distinguish
             between trading days and weeks, all while highlighting the previous

@@ -53,14 +53,14 @@ export function Testimonials() {
 
         {/** Title */}
         <div className="mx-auto max-w-xl text-center">
-          <h2 className=" text-4xl font-extrabold tracking-normal text-[#efb810] sm:text-5xl">
+          <h2 className=" font-Optician text-4xl font-medium tracking-wide text-[#efb810] sm:text-5xl">
             Trusted by over
             <div className="users">+50,000 users</div>
           </h2>
         </div>
 
         {/** Content */}
-        <div className="mx-auto mt-16 flow-root max-w-2xl font-AkzidenzLight font-medium tracking-wide sm:mt-20 lg:mx-0 lg:max-w-none">
+        <div className="mx-auto mt-16 flow-root max-w-2xl font-AkzidenzLight font-medium tracking-widest sm:mt-20 lg:mx-0 lg:max-w-none">
           <div className="-mt-8 grid grid-cols-1 sm:-mx-4 sm:grid-cols-2 sm:text-[0] md:grid-cols-2 lg:grid-cols-3 ">
             {/** Card */}
             {testimonials.map((testimonial, index) => (
@@ -72,7 +72,7 @@ export function Testimonials() {
                   <blockquote className="text-xl font-semibold text-gray-50">
                     <p>{`${testimonial.author.name}`}</p>
                   </blockquote>
-                  <blockquote className="text-gray-100">
+                  <blockquote className="text-gray-200 ">
                     <p>{`“${testimonial.body}”`}</p>
                   </blockquote>
                   <div className="items-cente text-[#efb810 mt-2 flex fill-current">

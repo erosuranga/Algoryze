@@ -20,7 +20,7 @@ export function Header() {
             <p>Los Angeles, CA</p>
           </div>
         </div> */}
-        <div className="hidden gap-2 sm:mt-10 sm:flex lg:mt-0 lg:grow lg:basis-0 lg:justify-end">
+        <div className="hidden gap-2 font-AkzidenzLight tracking-widest sm:mt-10 sm:flex lg:mt-0 lg:grow lg:basis-0 lg:justify-end">
           <Button href="#">Indicadores</Button>
           <Button href="#">Docs</Button>
           <Button href="#">FAQs</Button>
