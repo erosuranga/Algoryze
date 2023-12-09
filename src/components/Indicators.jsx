@@ -132,7 +132,7 @@ export function Indicators() {
         <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
           <SlideFromRight />
         </div>
-        {/*  <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+        <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="max-w-xl font-AkzidenzLight text-base font-medium leading-8 tracking-widest text-gray-100 lg:max-w-lg">
               <p>
@@ -153,7 +153,7 @@ export function Indicators() {
                 suit your chart design and adjust their intensity as needed.
               </p>
 
-              <ul role="list" className="mt-8 space-y-8 text-gray-600">
+{/*               <ul role="list" className="mt-8 space-y-8 text-gray-600">
                 <li className="flex gap-x-3">
                   <span className="ml-5 text-gray-100">
                     <strong className="font-semibold text-gray-50">
@@ -191,7 +191,7 @@ export function Indicators() {
                     and text color.
                   </span>
                 </li>
-              </ul>
+              </ul> */}
 
               <p className="my-8">
                 With the Previous Day High and Low + Separators Daily/Weekly
@@ -201,7 +201,7 @@ export function Indicators() {
               </p>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </div>
   )
