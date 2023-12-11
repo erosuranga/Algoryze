@@ -52,13 +52,13 @@ export function Hero() {
                 <div className=" mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
                     <span className="sr-only">Algoryze - </span>
 
-                    <div className="text-box w-full text-center">
+                    <div className="w-full text-center">
                         <h1 className="relative z-50 inline-block text-center text-5xl font-light uppercase text-gray-100 sm:text-8xl">
                             Automatiza tu                             
                         </h1>            
                         <br></br>        
                         <h1 className="relative z-50 inline-block text-center text-5xl font-light uppercase text-yellow-400 sm:text-8xl">     
-                            <TypeWriter />   
+                            {"#"}<TypeWriter />   
                         </h1>
                     </div>
 
