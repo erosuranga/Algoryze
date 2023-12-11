@@ -55,7 +55,7 @@ export function Testimonials() {
                 <div className="mx-auto max-w-xl text-center">
                     <h2 className="font-Optician text-4xl font-medium text-[#efb810] sm:text-5xl">
                         Utilizado por
-                        <div className="users">+50,000 traders</div>
+                        <div className="gold-shine-animation">+50,000 traders</div>
                     </h2>
                 </div>
 

@@ -36,10 +36,11 @@ export function CallToAction() {
                             </radialGradient>
                         </defs>
                     </svg>
-                    <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
-                        <h2 className="font-Optician text-5xl font-medium text-[#efb810] sm:text-4xl">
+                    <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">                    
+                        <h2 className="font-Optician text-5xl font-medium text-[#efb810] sm:text-4xl gold-shine-animation">
                             TOP #1
-                            <br />
+                        </h2>
+                        <h2 className="font-Optician text-5xl font-medium text-[#efb810] sm:text-4xl">
                             INDICADOR INSTITUCIONAL
                         </h2>
                         <p className="mt-6 font-AkzidenzLight text-base leading-8 text-gray-50">
