@@ -120,11 +120,7 @@ export function Indicators() {
     Previous Day High and Low + Separators Daily/Weekly
     </h2>
     <p className="mt-6 font-AkzidenzLight font-medium leading-8  text-gray-100">
-    This indicator is a powerful tool designed for traders on
-    TradingView. This indicator utilizes separators to distinguish
-    between trading days and weeks, all while highlighting the
-    previous day&apos;s high and low points with clear lines on your
-    chart.
+        This powerful tool uses separators to mark trading days and weeks, displaying clear lines for the previous day&apos;s high and low on your chart.     
     </p>
    </div>
    </div>
@@ -136,68 +132,17 @@ export function Indicators() {
    <div className="lg:pr-4">
    <div className="max-w-xl font-AkzidenzLight text-base font-medium leading-8 text-gray-100 lg:max-w-lg">
     <p>
-    By marking each day of the week at the top of your chart, it
-    provides a visual reference for the time within your trading
-    week, and each day is separated based on the 00:00 time of your
-    chosen timezone.
+        It provides a visual reference for the trading week, dividing each day based on your chosen timezone&apos;s 00:00 time.   
+    </p> 
+    <p className="my-4">
+        Understanding these reference points is crucial for predicting the next trading day&apos;s direction, be it a trend continuation or reversal.         
     </p>
     <p className="my-4">
-    Understanding the reference points of the previous day&apos;s
-    highs and lows is crucial for predicting the likely direction of
-    the next trading day, whether it&apos;s a continuation or
-    reversal of the trend.
+        The indicator offers customization options, allowing you to adjust line appearance and intensity to match your chart&apos;s design.        
     </p>
-    <p className="my-4">
-    One of the standout features of this indicator is its
-    adaptability. You can customize the appearance of the lines to
-    suit your chart design and adjust their intensity as needed.
-    </p>
-
-{/*    <ul role="list" className="mt-8 space-y-8 text-gray-600">
-    <li className="flex gap-x-3">
-     <span className="ml-5 text-gray-100">
-     <strong className="font-semibold text-gray-50">
-      UTC OFFSET:
-     </strong>{' '}
-     Set your timezone here to ensure accurate time references.
-     </span>
-    </li>
-    <li className="flex gap-x-3">
-     <span className="ml-5 text-gray-100">
-     <strong className="font-semibold text-gray-50">
-      {' '}
-      DAILY SEPARATOR:
-     </strong>{' '}
-     Customize the color, style, width, and text color of the
-     daily separators to match your preferences.
-     </span>
-    </li>
-    <li className="flex gap-x-3">
-     <span className="ml-5 text-gray-100">
-     <strong className="font-semibold text-gray-50">
-      WEEKLY SEPARATOR:
-     </strong>{' '}
-     Tailor the appearance of the weekly separators with options
-     for color, style, width, and text color.
-     </span>
-    </li>
-    <li className="flex gap-x-3">
-     <span className="ml-5 text-gray-100">
-     <strong className="font-semibold text-gray-50">
-      PREVIOUS HIGHS & LOWS:
-     </strong>{' '}
-     Customize the appearance of the lines representing previous
-     day&apos;s highs and lows, including color, style, width,
-     and text color.
-     </span>
-    </li>
-    </ul> */}
 
     <p className="my-8">
-    With the Previous Day High and Low + Separators Daily/Weekly
-    indicator, you can enhance your trading analysis by visually
-    tracking important reference points and adapt the indicator to
-    your chart&apos;s aesthetics and requirements.
+        Enhance your trading analysis with this adaptable tool, visually tracking key reference points while tailoring it to your chart&apos;s aesthetics and needs. 
     </p>
    </div>
    </div>
