@@ -1,20 +1,20 @@
 /* Clase para aplicar degradado a texto sin alineación ni cambios en el display */
 .gradient-text {
-  color: transparent;
-  background-clip: text;
-  background-image: linear-gradient(
-    to top,
+ color: transparent;
+ background-clip: text;
+ background-image: linear-gradient(
+ to top,
 
-    #4e4e4ec0,
-    #fcd600
-  );
+ #4e4e4ec0,
+ #fcd600
+ );
 }
 
 .gradient-button {
-  background-image: linear-gradient(
-    to top,
+ background-image: linear-gradient(
+ to top,
 
-    #4e4e4ec0,
-    #fcd600
-  );
+ #4e4e4ec0,
+ #fcd600
+ );
 }

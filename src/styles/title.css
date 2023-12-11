@@ -1,26 +1,26 @@
 /** Testimonial Title **/
 .users {
-  padding: 5px;
-  background: linear-gradient(
-    to right,
-    hsl(51, 3%, 17%) 0,
-    hwb(51 3% 17%) 12%,
-    hwb(51 2% 35%) 20%,
-    #efb810
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shine 3s infinite linear;
+ padding: 5px;
+ background: linear-gradient(
+ to right,
+ hsl(51, 3%, 17%) 0,
+ hwb(51 3% 17%) 12%,
+ hwb(51 2% 35%) 20%,
+ #efb810
+ );
+ background-clip: text;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ animation: shine 3s infinite linear;
 }
 @keyframes shine {
-  0% {
-    background-position: 0;
-  }
-  60% {
-    background-position: 600px;
-  }
-  100% {
-    background-position: 600px;
-  }
+ 0% {
+ background-position: 0;
+ }
+ 60% {
+ background-position: 600px;
+ }
+ 100% {
+ background-position: 600px;
+ }
 }

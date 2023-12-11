@@ -2,47 +2,47 @@ import React, { useEffect, useState } from 'react'
 import '../styles/counter.css'
 
 export default function Counter() {
-  const [counter, setCounter] = useState(0)
-  const [isVisible, setIsVisible] = useState(false)
+ const [counter, setCounter] = useState(0)
+ const [isVisible, setIsVisible] = useState(false)
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const section = document.getElementById('mySection')
+ useEffect(() => {
+ const handleScroll = () => {
+  const section = document.getElementById('mySection')
 
-      if (section) {
-        const rect = section.getBoundingClientRect()
-        const isVisible = rect.top < window.innerHeight && rect.bottom >= 0
+  if (section) {
+  const rect = section.getBoundingClientRect()
+  const isVisible = rect.top < window.innerHeight && rect.bottom >= 0
 
-        setIsVisible(isVisible)
-      }
-    }
+  setIsVisible(isVisible)
+  }
+ }
 
-    const interval = setInterval(() => {
-      if (isVisible) {
-        setCounter((prevCounter) => {
-          const newCounter = prevCounter + 100
+ const interval = setInterval(() => {
+  if (isVisible) {
+  setCounter((prevCounter) => {
+   const newCounter = prevCounter + 100
 
-          // Verificar si el contador alcanzó 10000 y detener el intervalo si es así
-          if (newCounter >= 10000) {
-            clearInterval(interval)
-            return 10000 // Asegurar que el contador no supere 10000
-          }
+   // Verificar si el contador alcanzó 10000 y detener el intervalo si es así
+   if (newCounter >= 10000) {
+   clearInterval(interval)
+   return 10000 // Asegurar que el contador no supere 10000
+   }
 
-          return newCounter
-        })
-      }
-    }, 15)
+   return newCounter
+  })
+  }
+ }, 15)
 
-    window.addEventListener('scroll', handleScroll)
+ window.addEventListener('scroll', handleScroll)
 
-    return () => {
-      clearInterval(interval)
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [isVisible])
+ return () => {
+  clearInterval(interval)
+  window.removeEventListener('scroll', handleScroll)
+ }
+ }, [isVisible])
 
-  // Lógica de renderizado para mostrar el contador y la palabra 'USUARIOS' desde el principio
-  const displayValue = isVisible ? `+ ${counter} USUARIOS` : ''
+ // Lógica de renderizado para mostrar el contador y la palabra 'USUARIOS' desde el principio
+ const displayValue = isVisible ? `+ ${counter} USUARIOS` : ''
 
-  return <div className="counter">{displayValue}</div>
+ return <div className="counter">{displayValue}</div>
 }
