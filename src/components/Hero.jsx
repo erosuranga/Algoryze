@@ -1,9 +1,43 @@
-import { BackgroundImage } from '@/components/BackgroundImage'
-import { Button } from '@/components/Button'
+"use client";
+
+import React, { useState, useEffect } from 'react';
 import { Container } from '@/components/Container'
 import '../styles/hero.css'
 
+export function TypeWriter() {
+
+    const [wordIndex, setWordIndex] = useState(0);
+    const [text, setText] = useState('');
+    const [isDeleting, setIsDeleting] = useState(false);
+
+    const words = ['Trading', 'Ingreso', 'Dinero'];   
+    
+    function type() {        
+        const currentWord = words[wordIndex];
+        
+        const shouldDelete = isDeleting ? 1 : -1;
+        
+        setText(current => currentWord.substring(0, current.length - shouldDelete));
+
+        if (!isDeleting && text === currentWord) {
+          setTimeout(() => setIsDeleting(true), 500);
+        } else if (isDeleting && text === '') {
+          setIsDeleting(false);          
+          setWordIndex((current) => (current + 1) % words.length);
+        }
+    }
+
+    useEffect(() => {
+        const timer = setTimeout(type, isDeleting ? 100 : 200);        
+        return () => clearTimeout(timer);      
+    }, [wordIndex, isDeleting, text]);
+
+    return text         
+}
+
+
 export function Hero() {
+    
     return (
         <div className="relative py-20 sm:pb-24 sm:pt-36">
             <Container className="relative">
@@ -19,16 +53,13 @@ export function Hero() {
                     <span className="sr-only">Algoryze - </span>
 
                     <div className="text-box w-full text-center">
-                        <h1 className=" relative z-50 inline-block text-center text-5xl font-light uppercase text-gray-100 sm:text-8xl">
-                            Automatiza <br /> tu
+                        <h1 className="relative z-50 inline-block text-center text-5xl font-light uppercase text-gray-100 sm:text-8xl">
+                            Automatiza tu                             
+                        </h1>            
+                        <br></br>        
+                        <h1 className="relative z-50 inline-block text-center text-5xl font-light uppercase text-yellow-400 sm:text-8xl">     
+                            <TypeWriter />   
                         </h1>
-                        <div className="animate-text font-semibold">
-                            <div>
-                                <span className="mx-auto">TRAIDING</span>
-                                <span className="mx-auto">MONEY</span>
-                                <span className="mx-auto">TIME</span>
-                            </div>
-                        </div>
                     </div>
 
                     <p className="text-1xl relative z-50 mt-6 text-center font-AkzidenzLight font-medium leading-8 text-gray-100">
@@ -37,32 +68,7 @@ export function Hero() {
                         between trading days and weeks, all while highlighting the previous
                         day&apos;s high and low points with clear lines on your chart.
                     </p>
-                    {/* 
-   <p>
-    At DeceptiConf you’ll learn about the latest dark patterns being
-    developed to trick even the smartest visitors, and you’ll learn
-    how to deploy them without ever being detected.
-   </p>
-   </div>   
-   */}
-                    {/* <Button href="#" className="mt-10 w-full sm:hidden">
-   Get your tickets
-   </Button> */}
-                    {/* <dl className="mt-10 grid grid-cols-2 gap-x-10 gap-y-6 sm:mt-16 sm:gap-x-16 sm:gap-y-10 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
-   {[
-    ['Speakers', '18'],
-    ['People Attending', '2,091'],
-    ['Venue', 'Staples Center'],
-    ['Location', 'Los Angeles'],
-   ].map(([name, value]) => (
-    <div key={name}>
-    <dt className="font-mono text-sm text-blue-600">{name}</dt>
-    <dd className="mt-0.5 text-2xl font-semibold text-gray-50">
-     {value}
-    </dd>
-    </div>
-   ))}
-   </dl> */}
+    
                 </div>
             </Container>
         </div>
