@@ -1,6 +1,7 @@
 "use client"
 import { useState } from 'react'
 import { CheckCircleIcon } from '@heroicons/react/20/solid'
+import ModalRequestAccess from './ModalRequestAccess'
 
 function ArrowRightIcon(props) {
     return (
@@ -16,10 +17,10 @@ function ArrowRightIcon(props) {
         </svg>
     )
 }
+
 export function CallToAction() {
 
-
-    const [success, setSuccess] = useState(false);
+    const [showModal, setShowModal] = useState(false);
 
     return (
         <div className="bg-[#151823]">
@@ -48,39 +49,15 @@ export function CallToAction() {
                             confianza en cada paso.
                         </p>
                         <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-                            
-                            <form className='flex flex-col' onSubmit={() => handleSubmit(e)}>
+                            <div>
                                 <h3 className="text-lg font-semibold text-yellow-400">
                                     Accede a indicadores gratuitos <span aria-hidden="true">&darr;</span>
                                 </h3>
-                                <div className="mt-5 flex rounded-xl bg-yellow-500/20 py-2.5 pr-2.5 shadow-xl shadow-yellow-900/5 focus-within:ring-2 focus-within:ring-yellow-600">
-                                    <input type="user" required placeholder="Usuario de Tradingview" aria-label="User Name" className="-my-2.5 flex-auto bg-transparent pl-6 pr-2.5 text-base text-slate-200 placeholder:text-slate-300/50 focus:outline-none h-12"/>                                    
-                                </div>
-                                <div className="mt-2 flex rounded-xl bg-yellow-500/20 py-2.5 pr-2.5 shadow-xl shadow-yellow-900/5 focus-within:ring-2 focus-within:ring-yellow-600">
-                                    <input type="name" required placeholder="Nombre Completo" aria-label="Full Name" className="-my-2.5 flex-auto bg-transparent pl-6 pr-2.5 text-base text-slate-200 placeholder:text-slate-300/50 focus:outline-none h-12"/>                                    
-                                </div>                                
-                                <div className="mt-2 flex rounded-xl bg-yellow-500/20 py-2.5 pr-2.5 shadow-xl shadow-yellow-900/5 focus-within:ring-2 focus-within:ring-yellow-600">
-                                    <input type="email" required placeholder="Correo Electrónico" aria-label="Email address" className="-my-2.5 flex-auto bg-transparent pl-6 pr-2.5 text-base text-slate-200 placeholder:text-slate-300/50 focus:outline-none h-12"/>                                    
-                                </div>
-
-                                <button type="button" onClick={() => setSuccess(true)} className="mt-3 mx-auto inline-flex items-center gap-x-2 rounded-xl bg-yellow-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-yellow-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-800">                                    
-                                    {
-                                        success  ? 
-                                        (
-                                            <>
-                                                Acceso Solicitado
-                                                <CheckCircleIcon className="-mr-0.5 h-5 w-5" aria-hidden="true" /> 
-                                            </>
-                                            ) : (
-                                            <>
-                                                Solicitar Acceso
-                                                <ArrowRightIcon className="h-5 w-5" aria-hidden="true" />
-                                            </>
-                                        )                                        
-                                    }
+                                <button type="button" onClick={() => setShowModal(true)} className="mt-3 inline-flex items-center gap-x-2 rounded-xl bg-yellow-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-yellow-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-800">
+                                    Solicitar Acceso
+                                    <ArrowRightIcon className="h-5 w-5" aria-hidden="true" />
                                 </button>
-                            </form>
-                            
+                            </div>
                         </div>
                     </div>
                     {/** Image Indicator 1 */}
@@ -103,6 +80,11 @@ export function CallToAction() {
                     </div>
                 </div>
             </div>
+
+            {/** Modal */}
+            {
+                showModal && <ModalRequestAccess setShowModal={setShowModal} showModal={showModal} />
+            }
         </div>
     )
 }
