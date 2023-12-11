@@ -54,8 +54,8 @@ export function Testimonials() {
   {/** Title */}
   <div className="mx-auto max-w-xl text-center">
    <h2 className=" font-Optician text-4xl font-medium text-[#efb810] sm:text-5xl">
-   Trusted by over
-   <div className="users">+50,000 users</div>
+   Utilizado por 
+   <div className="users">+50,000 traders</div>
    </h2>
   </div>
 
