@@ -124,6 +124,25 @@ const SlideFromRight = () => {
     )
 }
 
+const IndicatorsContent = [
+    {
+        title: 'Previous Day High and Low + Separators Daily/Weekly',
+        text: 'This powerful tool uses separators to mark trading days and weeks, displaying clear lines for the previous day\'s high and low on your chart.',
+        text_2: 'Understanding these reference points is crucial for predicting the next trading day\'s direction, be it a trend continuation or reversal.',
+        text_3: 'The indicator offers customization options, allowing you to adjust line appearance and intensity to match your chart\'s design.',
+        text_4: 'Enhance your trading analysis with this adaptable tool, visually tracking key reference points while tailoring it to your chart\'s aesthetics and needs.',
+    },
+    {
+        title: 'Previous Day High and Low + Separators Daily/Weekly',
+    },
+    {
+        title: 'Previous Day High and Low + Separators Daily/Weekly',
+    },
+    {
+        title: "",
+    }
+]
+
 export function Indicators() {
     return (
         <div className="relative isolate overflow-hidden bg-[#151823] px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
@@ -182,18 +201,14 @@ export function Indicators() {
                 </div>
                 <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
                     <div className="lg:pr-4">
-                        <div className="max-w-xl font-AkzidenzLight text-base font-medium leading-8 text-gray-100 lg:max-w-lg">
-                            <p>
-                                It provides a visual reference for the trading week, dividing each day based on your chosen timezone&apos;s 00:00 time.
-                            </p>
+                        <div className="max-w-xl font-AkzidenzLight text-base font-medium leading-8 text-gray-100 lg:max-w-lg">                            
                             <p className="my-4">
                                 Understanding these reference points is crucial for predicting the next trading day&apos;s direction, be it a trend continuation or reversal.
                             </p>
                             <p className="my-4">
                                 The indicator offers customization options, allowing you to adjust line appearance and intensity to match your chart&apos;s design.
                             </p>
-
-                            <p className="my-8">
+                            <p className="my-4">
                                 Enhance your trading analysis with this adaptable tool, visually tracking key reference points while tailoring it to your chart&apos;s aesthetics and needs.
                             </p>
                         </div>
