@@ -37,5 +37,5 @@ module.exports = {
   },
  },
  },
- plugins: [headlessuiPlugin],
+ plugins: [headlessuiPlugin]
 }
