@@ -85,15 +85,15 @@ const SlideFromRight = () => {
                         </div>
                         {/** Image 2 */}
                         <div className={image === 1 ? 'duration-700 ease-in-out' : `transform transition hidden duration-700 ease-in-out`} data-carousel-item>
-                            <img src="https://images.pexels.com/photos/259915/pexels-photo-259915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
+                            <img src="https://static.tradingview.com/static/bundles/slider.0f29f659d6db3d3514e6.png" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
                         </div>
                         {/** Image 3 */}
                         <div className={image === 2 ? 'duration-700 ease-in-out' : `transform transition hidden duration-700 ease-in-out`} data-carousel-item>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1600px-Image_created_with_a_mobile_phone.png" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
+                            <img src="https://static.tradingview.com/static/bundles/advanced-charts.f1788c1e6e8b222d0b85.jpg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
                         </div>        
                         {/** Image 4 */}
                         <div className={image === 3 ? 'duration-700 ease-in-out' : `transform transition hidden duration-700 ease-in-out`} data-carousel-item>
-                            <img src="https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
+                            <img src="https://s3.tradingview.com/6/6W7to2SK_mid.png" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
                         </div>                
                     </div>                                
 
