@@ -3,16 +3,16 @@
 @tailwind utilities;
 
 @font-face {
- font-family: 'Akzidenz grotesk';
- src: url('../Fonts/FontsFree-Net-Akzidenz-grotesk-bold.ttf');
+  font-family: 'Akzidenz grotesk';
+  src: url('../Fonts/FontsFree-Net-Akzidenz-grotesk-bold.ttf');
 }
 
 @font-face {
- font-family: 'Akzidenz grotesk';
- src: url('../Fonts/AkzidenzGrotesk-LightExtended\ \(1\).otf');
+  font-family: 'Akzidenz grotesk';
+  src: url('../Fonts/AkzidenzGrotesk-LightExtended\ \(1\).otf');
 }
 
 @font-face {
- font-family: 'Optician Sans';
- src: url('../Fonts/Optician-Sans.otf');
+  font-family: 'Optician Sans';
+  src: url('../Fonts/Optician-Sans.otf');
 }
