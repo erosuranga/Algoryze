@@ -45,8 +45,6 @@ export function CallToAction() {
               </radialGradient>
             </defs>
           </svg>
-
-          {/** Text & Title */}
           <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
             <h2 className="gold-shine-animation font-Optician text-5xl font-medium text-[#efb810] sm:text-4xl">
               TOP #1
@@ -77,7 +75,6 @@ export function CallToAction() {
               </div>
             </div>
           </div>
-          
           {/** Image Indicator 1 */}
           <div className="relative mt-16 h-80 lg:mt-8">
             <img
@@ -88,7 +85,6 @@ export function CallToAction() {
               height={1080}
             />
           </div>
-
           {/** Image Indicator 2 */}
           <div className="relative mt-16 h-80 lg:mt-8">
             <img
