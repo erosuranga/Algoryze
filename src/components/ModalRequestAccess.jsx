@@ -2,6 +2,7 @@ import { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import Image from 'next/image'
 import Isotipo from '../images/logos/isotipo_golden.png'
+import RegisterUser from './RegisterUser'
 
 function ArrowRightIcon(props) {
   return (
@@ -19,6 +20,7 @@ function ArrowRightIcon(props) {
 }
 
 export default function ModalRequestAccess({ showModal, setShowModal }) {
+  const [showUser, setShowUser] = useState(false)
   return (
     <Transition.Root show={showModal} as={Fragment}>
       <Dialog as="div" className="relative z-10" onClose={setShowModal}>
@@ -45,7 +47,7 @@ export default function ModalRequestAccess({ showModal, setShowModal }) {
               leaveFrom="opacity-100 translate-y-0 sm:scale-100"
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
-              <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-[#151823] px-4 pb-4 pt-5 text-left font-AkzidenzLight shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-sm sm:p-6">
+              <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-[#151823] px-4 pb-4 pt-5 text-left font-AkzidenzLight tracking-wider shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-sm sm:p-6">
                 <div>
                   <Image
                     src={Isotipo}
@@ -69,6 +71,19 @@ export default function ModalRequestAccess({ showModal, setShowModal }) {
                           aria-label="User Name"
                           className="-my-2.5 h-12 flex-auto bg-transparent pl-6 pr-2.5 text-base text-slate-200 placeholder:text-slate-300/50 focus:outline-none"
                         />
+                      </div>
+                      <div className="tracki mt-5 text-sm text-gray-300">
+                        El usuario no debe ser un correo electronico ni contener
+                        espacios.
+                        <button
+                          type="button"
+                          className="max-w-35%   ml-2 inline-flex justify-center rounded-xl bg-yellow-700 px-3 py-0.5 text-sm font-semibold text-white shadow-sm hover:bg-yellow-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-800"
+                        >
+                          <ArrowRightIcon
+                            className="h-5 w-5"
+                            aria-hidden="true"
+                          />
+                        </button>
                       </div>
                       <div className="mt-2 flex rounded-xl bg-yellow-500/20 py-2.5 pr-2.5 shadow-xl shadow-yellow-900/5 focus-within:ring-2 focus-within:ring-yellow-600">
                         <input
@@ -94,7 +109,8 @@ export default function ModalRequestAccess({ showModal, setShowModal }) {
                 <div className="mt-5 sm:mt-6">
                   <button
                     type="button"
-                    className="inline-flex w-full justify-center rounded-xl bg-yellow-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-yellow-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-800"
+                    onClick={() => setShowUser(true)}
+                    className="inline-flex w-full justify-center rounded-xl bg-yellow-700 px-3.5 py-2.5 text-sm font-semibold tracking-wider text-white shadow-sm hover:bg-yellow-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-800"
                   >
                     Solicitar Acceso
                     <ArrowRightIcon className="h-5 w-5" aria-hidden="true" />
@@ -103,6 +119,9 @@ export default function ModalRequestAccess({ showModal, setShowModal }) {
               </Dialog.Panel>
             </Transition.Child>
           </div>
+          {showUser && (
+            <RegisterUser setShowUser={setShowUser} showUser={showUser} />
+          )}
         </div>
       </Dialog>
     </Transition.Root>
