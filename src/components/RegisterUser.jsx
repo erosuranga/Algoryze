@@ -66,8 +66,8 @@ export default function RegisterUser({ showUser, setShowUser }) {
                       as="h3"
                       className="text-base leading-6  text-gray-100"
                     >
-                      En las siguientes 24-48hs recibiras una notificacion en tu
-                      Email, por favor recuerda revisar la casilla de Spam.
+                      Recibirás el indicador en las próximas 24-48H en el
+                      apartado de Scripts por invitación
                     </Dialog.Title>
                     <div className="mt-2"></div>
                   </div>
@@ -75,7 +75,7 @@ export default function RegisterUser({ showUser, setShowUser }) {
                 <div className="mt-5 sm:mt-6">
                   <button
                     type="button"
-                    className="inline-flex w-full justify-center rounded-xl bg-yellow-700 px-3.5 py-2.5 text-sm font-semibold tracking-wider text-white shadow-sm hover:bg-yellow-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-800"
+                    className="inline-flex w-full justify-center rounded-xl border border-yellow-400 bg-transparent px-3.5 py-2.5 text-sm font-medium tracking-widest text-white shadow-sm hover:bg-yellow-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-800"
                   >
                     Volver al sitio
                     <ArrowRightIcon className="h-5 w-5" aria-hidden="true" />

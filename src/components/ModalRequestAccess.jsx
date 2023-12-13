@@ -73,7 +73,7 @@ export default function ModalRequestAccess({ showModal, setShowModal }) {
                           className="-my-2.5 h-12 flex-auto bg-transparent pl-6 pr-2.5 text-base text-slate-200 placeholder:text-slate-300/50 focus:outline-none"
                         />
                       </div>
-                      <div className="tracki mt-5 text-sm text-gray-300">
+                      {/*  <div className="tracki mt-5 text-sm text-gray-300">
                         El usuario no debe ser un correo electronico ni contener
                         espacios.
                         <button
@@ -85,7 +85,7 @@ export default function ModalRequestAccess({ showModal, setShowModal }) {
                             aria-hidden="true"
                           />
                         </button>
-                      </div>
+                      </div> */}
                       <div className="mt-2 flex rounded-xl bg-yellow-500/20 py-2.5 pr-2.5 shadow-xl shadow-yellow-900/5 focus-within:ring-2 focus-within:ring-yellow-600">
                         <input
                           type="name"
@@ -111,10 +111,10 @@ export default function ModalRequestAccess({ showModal, setShowModal }) {
                   <button
                     type="button"
                     onClick={() => setShowUser(true)}
-                    className="inline-flex w-full justify-center rounded-xl bg-yellow-700 px-3.5 py-2.5 text-sm font-semibold tracking-wider text-white shadow-sm hover:bg-yellow-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-800"
+                    className="inline-flex w-full justify-center rounded-xl border border-yellow-400 bg-transparent px-3.5 py-2.5 text-sm font-medium tracking-wider text-white shadow-sm hover:bg-yellow-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-800"
                   >
                     Solicitar Acceso
-                    <ArrowRightIcon className="h-5 w-5" aria-hidden="true" />
+                    {/*  <ArrowRightIcon className="h-5 w-5" aria-hidden="true" /> */}
                   </button>
                 </div>
               </Dialog.Panel>

@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
       <body className="flex min-h-full bg-[#151823]">
         <div className="flex w-full flex-col">{children}</div>
         {/** Flowbite */}
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+        {/*  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script> */}
       </body>
     </html>
   )
