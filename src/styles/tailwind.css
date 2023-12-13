@@ -16,13 +16,3 @@
   font-family: 'Optician Sans';
   src: url('../Fonts/Optician-Sans.otf');
 }
-
-@font-face {
-  font-family: 'Akzidenz grotesk';
-  src: url('../Fonts/Akzidenz-grotesk-roman.ttf');
-}
-
-@font-face {
-  font-family: 'Akzidenz grotesk';
-  src: url('../Fonts/Akzidenz-grotesk-black.ttf');
-}

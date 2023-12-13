@@ -63,14 +63,14 @@ export function FrequentlyAskedQuestions() {
           </h2>
         </div>
         {/** content */}
-        <div className="mx-auto max-w-4xl divide-y divide-gray-200/10  font-AkzidenzLight ">
-          <dl className="mt-10 space-y-6 divide-y divide-gray-200/10">
+        <div className="mx-auto max-w-4xl divide-y divide-gray-200/10 font-AkzidenzLight tracking-wider">
+          <dl className="mt-10 space-y-6 divide-y divide-gray-200/10 ">
             {faqs.map((faq) => (
-              <Disclosure as="div" key={faq.question} className="pt-6">
+              <Disclosure as="div" key={faq.question} className="ak pt-6">
                 {({ open }) => (
                   <>
                     <dt>
-                      <Disclosure.Button className="flex w-full items-start justify-between text-left text-yellow-400">
+                      <Disclosure.Button className="flex w-full items-start justify-between text-left  text-yellow-400">
                         <span className="text-base leading-7">
                           {faq.question}
                         </span>

@@ -52,22 +52,22 @@ export function CallToAction() {
             <h2 className="font-Optician text-5xl font-medium text-[#efb810] sm:text-4xl">
               INDICADOR INSTITUCIONAL
             </h2>
-            <p className="mt-6 font-AkzidenzLight text-base leading-8 text-gray-50">
+            <p className="mt-6 font-AkzidenzLight text-base leading-8 tracking-wider text-gray-50">
               Descubre la excelencia con nuestro destacado indicador
               institucional. En nuestro compromiso con la calidad,
               proporcionamos información valiosa que impulsa el éxito y la
               confianza en cada paso.
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
+            <div className="mt-10 flex items-center justify-center gap-x-6 font-AkzidenzLight tracking-wider lg:justify-start">
               <div>
-                <h3 className="text-lg font-semibold text-yellow-400">
+                <h3 className="text-lg font-medium text-yellow-400">
                   Accede a indicadores gratuitos{' '}
                   <span aria-hidden="true">&darr;</span>
                 </h3>
                 <button
                   type="button"
                   onClick={() => setShowModal(true)}
-                  className="mt-3 inline-flex items-center gap-x-2 rounded-xl bg-yellow-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-yellow-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-800"
+                  className="mt-3 inline-flex items-center gap-x-2 rounded-xl bg-yellow-700 px-3.5 py-2.5 text-sm font-semibold tracking-wider text-white shadow-sm hover:bg-yellow-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-800"
                 >
                   Solicitar Acceso
                   <ArrowRightIcon className="h-5 w-5" aria-hidden="true" />
