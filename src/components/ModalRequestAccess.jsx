@@ -67,6 +67,7 @@ export default function ModalRequestAccess({ showModal, setShowModal }) {
                         <input
                           type="user"
                           required
+                          pattern='pattern="^(?!.*[@.com]).*$'
                           placeholder="Usuario de Tradingview"
                           aria-label="User Name"
                           className="-my-2.5 h-12 flex-auto bg-transparent pl-6 pr-2.5 text-base text-slate-200 placeholder:text-slate-300/50 focus:outline-none"
