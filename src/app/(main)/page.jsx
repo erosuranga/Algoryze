@@ -5,21 +5,23 @@ import { Sponsors } from '@/components/Sponsors'
 import { FrequentlyAskedQuestions } from '@/components/FAQs'
 import { Indicators } from '@/components/Indicators'
 import { CallToAction } from '@/components/CallToAction'
+import { CallToActionFeo } from '@/components/CallToAction_feo'
 
 export default function Home() {
- return (
- <>
-  <Hero />
-  <CallToAction />
-  {/* <CallToAction /> */}
-  <Testimonials />
+  return (
+    <>
+      <Hero />
+      <CallToAction />
+      {/* <CallToActionFeo /> */}
+      {/* <CallToAction /> */}
+      <Testimonials />
 
-  <Indicators />
+      <Indicators />
 
-  {/* <Sponsors /> */}
-  {/* <Newsletter /> */}
+      {/* <Sponsors /> */}
+      {/* <Newsletter /> */}
 
-  <FrequentlyAskedQuestions />
- </>
- )
+      <FrequentlyAskedQuestions />
+    </>
+  )
 }

@@ -19,53 +19,59 @@ function ArrowRightIcon(props) {
 }
 
 const IndicatorsCarousel = () => {
-
   const imagesUrls = [
-    "https://s3.tradingview.com/snapshots/d/d8dnXvmQ.png",
-    "https://s3.tradingview.com/snapshots/z/zC16fLpC.png"
+    'https://s3.tradingview.com/snapshots/d/d8dnXvmQ.png',
+    'https://s3.tradingview.com/snapshots/z/zC16fLpC.png',
   ]
 
   const [image, setImage] = useState(0)
 
   // Function to switch to the next image
   const switchToNextImage = () => {
-    setImage((prevImage) => (prevImage + 1) % imagesUrls.length);
-  };
+    setImage((prevImage) => (prevImage + 1) % imagesUrls.length)
+  }
 
   // Use useEffect to set up the interval for switching images
   useEffect(() => {
-    const intervalId = setInterval(switchToNextImage, 4000);
+    const intervalId = setInterval(switchToNextImage, 4000)
 
     // Clear the interval when the component unmounts
-    return () => clearInterval(intervalId);
-  }, []);
-
+    return () => clearInterval(intervalId)
+  }, [])
 
   return (
     <div className="grid gap-4">
-
-      {
-        imagesUrls.map((imageUrl, index) => (
-          <div
-            key={index}
-            className={image === index ? 'duration-700 ease-in-out' : 'transform transition hidden duration-700 ease-in-out'}
-            data-carousel-item
-          >
-            <img
-              src={imageUrl}
-              className="h-auto rounded-lg"
-              alt={`Image ${index + 1}`}
-            />
-          </div>
-        ))
-      }
+      {imagesUrls.map((imageUrl, index) => (
+        <div
+          key={index}
+          className={
+            image === index
+              ? 'duration-700 ease-in-out'
+              : 'hidden transform transition duration-700 ease-in-out'
+          }
+          data-carousel-item
+        >
+          <img
+            src={imageUrl}
+            className=" h-auto rounded-lg "
+            alt={`Image ${index + 1}`}
+          />
+        </div>
+      ))}
 
       <div className="grid grid-cols-2 gap-4">
-        <img className="h-auto rounded-lg mx-auto" src={imagesUrls[0]} alt="" />
-        <img className="h-auto rounded-lg mx-auto" src={imagesUrls[1]} alt="" />
+        <img
+          className="mx-auto h-auto rounded-lg hover:scale-90 "
+          src={imagesUrls[0]}
+          alt=""
+        />
+        <img
+          className="mx-auto h-auto rounded-lg hover:scale-90"
+          src={imagesUrls[1]}
+          alt=""
+        />
       </div>
     </div>
-
   )
 }
 
@@ -73,7 +79,7 @@ export function CallToAction() {
   const [showModal, setShowModal] = useState(false)
 
   return (
-    <div className="bg-[#151823] scroll-smooth">
+    <div className="scroll-smooth bg-[#151823]">
       <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
         <div className="relative isolate overflow-hidden bg-[#151823] px-6 pt-16  shadow-2xl shadow-gray-950 sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-10 lg:px-24 lg:pt-0">
           {/** Yellow shine at bottom */}
@@ -82,7 +88,13 @@ export function CallToAction() {
             className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
             aria-hidden="true"
           >
-            <circle cx={512} cy={512} r={512} fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fillOpacity="0.7" />
+            <circle
+              cx={512}
+              cy={512}
+              r={512}
+              fill="url(#759c1415-0410-454c-8f7c-9a820de03641)"
+              fillOpacity="0.7"
+            />
 
             <defs>
               <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
@@ -125,10 +137,9 @@ export function CallToAction() {
           </div>
 
           {/** Images */}
-          <div className='my-auto w-3/4 shadow shadow-md'>
+          <div className="my-auto w-3/4 shadow shadow-md">
             <IndicatorsCarousel />
           </div>
-
         </div>
       </div>
 
