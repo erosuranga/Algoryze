@@ -2,6 +2,7 @@ import { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import Image from 'next/image'
 import Isotipo from '../images/logos/isotipo_golden.png'
+import myImage from '../images/Register.png'
 
 function ArrowRightIcon(props) {
   return (
@@ -64,12 +65,19 @@ export default function RegisterUser({ showUser, setShowUser }) {
                   <div className="mt-3 text-center sm:mt-5">
                     <Dialog.Title
                       as="h3"
-                      className="text-base leading-6  text-gray-100"
+                      className="text-base leading-6  tracking-wider text-gray-100"
                     >
                       Recibirás el indicador en las próximas 24-48H en el
                       apartado de Scripts por invitación
                     </Dialog.Title>
                     <div className="mt-2"></div>
+                    <div>
+                      <Image
+                        src={myImage}
+                        alt="Registered"
+                        className="h-auto w-auto"
+                      />
+                    </div>
                   </div>
                 </div>
                 <div className="mt-5 sm:mt-6">

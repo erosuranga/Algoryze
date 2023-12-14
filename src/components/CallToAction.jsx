@@ -53,7 +53,7 @@ const IndicatorsCarousel = () => {
         >
           <img
             src={imageUrl}
-            className=" h-auto rounded-lg "
+            className=" h-auto rounded-lg hover:origin-bottom hover:scale-x-110 hover:scale-y-125"
             alt={`Image ${index + 1}`}
           />
         </div>

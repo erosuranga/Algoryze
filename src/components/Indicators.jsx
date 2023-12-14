@@ -150,9 +150,9 @@ const SlideFromRight = () => {
               className="group absolute start-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
               data-carousel-prev
             >
-              <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/70 group-hover:bg-white/90 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-200/90 dark:group-hover:bg-gray-200/60 dark:group-focus:ring-gray-800/70">
+              <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/70 group-hover:bg-white/90 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-transparent dark:group-hover:bg-gray-200/60 dark:group-focus:ring-gray-800/70">
                 <svg
-                  className="h-4 w-4 text-white rtl:rotate-180 dark:text-gray-800"
+                  className="h-4 w-4 text-white rtl:rotate-180 dark:text-gray-600"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -177,9 +177,9 @@ const SlideFromRight = () => {
               className="group absolute end-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
               data-carousel-next
             >
-              <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/70 group-hover:bg-white/90 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-200/90 dark:group-hover:bg-gray-200/60 dark:group-focus:ring-gray-800/70">
+              <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/70 group-hover:bg-white/90 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-transparent dark:group-hover:bg-gray-200/60 dark:group-focus:ring-gray-800/70">
                 <svg
-                  className="h-4 w-4 text-white rtl:rotate-180 dark:text-gray-800"
+                  className="h-4 w-4 text-white rtl:rotate-180 dark:text-gray-600"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -283,7 +283,7 @@ export function Indicators() {
             </div>
           </div>
         </div>
-        <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+        <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden ">
           <SlideFromRight />
         </div>
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
