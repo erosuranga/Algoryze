@@ -1,10 +1,7 @@
 'use client'
-import { useState } from 'react'
-import { CheckCircleIcon } from '@heroicons/react/20/solid'
+
+import { Fragment, useEffect, useRef, useState } from 'react'
 import ModalRequestAccess from './ModalRequestAccess'
-import VerticalCarousel from './Carousel/VerticalCarousel'
-import { config } from "react-spring";
-import Example from './Carousel/example'
 
 function ArrowRightIcon(props) {
   return (
@@ -21,40 +18,56 @@ function ArrowRightIcon(props) {
   )
 }
 
-let slides = [
-  {
-    key: 1,
-    content: "1"
-  },
-  {
-    key: 2,
-    content: "2"
-  },
-  {
-    key: 3,
-    content: "2"
-  },
-  {
-    key: 4,
-    content: "3"
-  },
-  {
-    key: 5,
-    content: "4"
-  },
-  {
-    key: 6,
-    content: "5"
-  },
-  {
-    key: 7,
-    content: "6"
-  },
-  {
-    key: 8,
-    content: "7"
-  }
-];
+const IndicatorsCarousel = () => {
+
+  const imagesUrls = [
+    "https://s3.tradingview.com/snapshots/d/d8dnXvmQ.png",
+    "https://s3.tradingview.com/snapshots/z/zC16fLpC.png"
+  ]
+
+  const [image, setImage] = useState(0)
+
+  // Function to switch to the next image
+  const switchToNextImage = () => {
+    setImage((prevImage) => (prevImage + 1) % imagesUrls.length);
+  };
+
+  // Use useEffect to set up the interval for switching images
+  useEffect(() => {
+    const intervalId = setInterval(switchToNextImage, 4000);
+
+    // Clear the interval when the component unmounts
+    return () => clearInterval(intervalId);
+  }, []);
+
+
+  return (
+    <div className="grid gap-4">
+
+      {
+        imagesUrls.map((imageUrl, index) => (
+          <div
+            key={index}
+            className={image === index ? 'duration-700 ease-in-out' : 'transform transition hidden duration-700 ease-in-out'}
+            data-carousel-item
+          >
+            <img
+              src={imageUrl}
+              className="h-auto rounded-lg"
+              alt={`Image ${index + 1}`}
+            />
+          </div>
+        ))
+      }
+
+      <div className="grid grid-cols-2 gap-4">
+        <img className="h-auto rounded-lg mx-auto" src={imagesUrls[0]} alt="" />
+        <img className="h-auto rounded-lg mx-auto" src={imagesUrls[1]} alt="" />
+      </div>
+    </div>
+
+  )
+}
 
 export function CallToAction() {
   const [showModal, setShowModal] = useState(false)
@@ -62,20 +75,15 @@ export function CallToAction() {
   return (
     <div className="bg-[#151823] scroll-smooth">
       <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
-        <div className=" relative isolate overflow-hidden bg-[#151823] px-6 pt-16  shadow-2xl shadow-gray-950 sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+        <div className="relative isolate overflow-hidden bg-[#151823] px-6 pt-16  shadow-2xl shadow-gray-950 sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-10 lg:px-24 lg:pt-0">
           {/** Yellow shine at bottom */}
           <svg
             viewBox="0 0 1024 1024"
             className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
             aria-hidden="true"
           >
-            <circle
-              cx={512}
-              cy={512}
-              r={512}
-              fill="url(#759c1415-0410-454c-8f7c-9a820de03641)"
-              fillOpacity="0.7"
-            />
+            <circle cx={512} cy={512} r={512} fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fillOpacity="0.7" />
+
             <defs>
               <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
                 <stop stopColor="#FAE6B1" />
@@ -83,6 +91,8 @@ export function CallToAction() {
               </radialGradient>
             </defs>
           </svg>
+
+          {/** Text */}
           <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
             <h2 className="gold-shine-animation font-Optician text-5xl font-medium text-[#efb810] sm:text-4xl">
               TOP #1
@@ -113,10 +123,12 @@ export function CallToAction() {
               </div>
             </div>
           </div>
-          {/** Image Indicator 1 */}
-          
-            <Example/>
-          
+
+          {/** Images */}
+          <div className='my-auto w-3/4 shadow shadow-md'>
+            <IndicatorsCarousel />
+          </div>
+
         </div>
       </div>
 
