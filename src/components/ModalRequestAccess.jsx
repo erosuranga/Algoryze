@@ -1,9 +1,10 @@
+'use client'
 import { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import Image from 'next/image'
 import Isotipo from '../images/logos/isotipo_golden.png'
 import RegisterUser from './RegisterUser'
-
+import '../styles/tooltip.css'
 function ArrowRightIcon(props) {
   return (
     <svg aria-hidden="true" viewBox="0 0 24 24" {...props}>
@@ -16,6 +17,16 @@ function ArrowRightIcon(props) {
         strokeLinejoin="round"
       />
     </svg>
+  )
+}
+//Tooltip
+function Tooltip(props) {
+  const { text, children } = props
+  return (
+    <div className="tooltip">
+      {children}
+      <span className="tooltiptext">{text}</span>
+    </div>
   )
 }
 
@@ -64,14 +75,17 @@ export default function ModalRequestAccess({ showModal, setShowModal }) {
                     </Dialog.Title>
                     <div className="mt-2">
                       <div className="mt-5 flex rounded-xl bg-yellow-500/20 py-2.5 pr-2.5 shadow-xl shadow-yellow-900/5 focus-within:ring-2 focus-within:ring-yellow-600">
-                        <input
-                          type="user"
-                          required
-                          pattern='pattern="^(?!.*[@.com]).*$'
-                          placeholder="Usuario de Tradingview"
-                          aria-label="User Name"
-                          className="-my-2.5 h-12 flex-auto bg-transparent pl-6 pr-2.5 text-base text-slate-200 placeholder:text-slate-300/50 focus:outline-none"
-                        />
+                        <Tooltip text="El usuario no puede ser tu correo electronico ni contener espacios">
+                          <input
+                            type="text"
+                            required
+                            pattern="^(?!\S*[@.com])\S+$"
+                            title=""
+                            placeholder="Usuario de Tradingview"
+                            aria-label="User Name"
+                            className="-my-2.5 h-12 flex-auto bg-transparent pl-6 pr-2.5 text-base text-slate-200 placeholder:text-slate-300/50 focus:outline-none"
+                          />
+                        </Tooltip>
                       </div>
                       {/*  <div className="tracki mt-5 text-sm text-gray-300">
                         El usuario no debe ser un correo electronico ni contener

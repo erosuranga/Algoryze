@@ -20,9 +20,7 @@ function ArrowRightIcon(props) {
   )
 }
 
-
 const IndicatorsSlider = () => {
-
   const [isInViewport, setIsInViewport] = useState(false)
   const elementRef = useRef(null)
 
@@ -60,7 +58,7 @@ const IndicatorsSlider = () => {
   }, [])
 
   function nextImage() {
-    console.log("next", image)
+    console.log('next', image)
     if (image < 3) {
       setImage(image + 1)
     } else {
@@ -69,7 +67,7 @@ const IndicatorsSlider = () => {
   }
 
   function prevImage() {
-    console.log("prev", image)
+    console.log('prev', image)
     if (image > 0) {
       setImage(image - 1)
     } else {
@@ -89,52 +87,110 @@ const IndicatorsSlider = () => {
           leaveFrom="translate-x-0"
           leaveTo="translate-x-full"
         >
-
           {/** Carousel */}
-          <div id="default-carousel" class="relative w-full" data-carousel="slide">
+          <div
+            id="default-carousel"
+            class="relative w-full"
+            data-carousel="slide"
+          >
             <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
               {/** Image 1 */}
-              <div className={image === 0 ? 'duration-700 ease-in-out' : `transform transition hidden duration-700 ease-in-out`} data-carousel-item>
-                <img src="https://s3.tradingview.com/snapshots/d/d8dnXvmQ.png" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+              <div
+                className={
+                  image === 0
+                    ? 'duration-700 ease-in-out'
+                    : `hidden transform transition duration-700 ease-in-out`
+                }
+                data-carousel-item
+              >
+                <img
+                  src="https://s3.tradingview.com/snapshots/d/d8dnXvmQ.png"
+                  className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                  alt="..."
+                />
               </div>
               {/** Image 2 */}
-              <div className={image === 1 ? 'duration-700 ease-in-out' : `transform transition hidden duration-700 ease-in-out`} data-carousel-item>
-                <img src="https://s3.tradingview.com/snapshots/d/d8dnXvmQ.png" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-              </div>              
+              <div
+                className={
+                  image === 1
+                    ? 'duration-700 ease-in-out'
+                    : `hidden transform transition duration-700 ease-in-out`
+                }
+                data-carousel-item
+              >
+                <img
+                  src="https://s3.tradingview.com/snapshots/d/d8dnXvmQ.png"
+                  className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                  alt="..."
+                />
+              </div>
             </div>
 
             {/** Left */}
-            <button type="button" onClick={() => prevImage()} className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-              <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/70 dark:bg-gray-200/90 group-hover:bg-white/90 dark:group-hover:bg-gray-200/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
+            <button
+              type="button"
+              onClick={() => prevImage()}
+              className="group absolute start-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
+              data-carousel-prev
+            >
+              <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/70 group-hover:bg-white/90 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-200/90 dark:group-hover:bg-gray-200/60 dark:group-focus:ring-gray-800/70">
+                <svg
+                  className="h-4 w-4 text-white rtl:rotate-180 dark:text-gray-800"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 6 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 1 1 5l4 4"
+                  />
                 </svg>
                 <span className="sr-only">Previous</span>
               </span>
             </button>
 
             {/** Right */}
-            <button type="button" onClick={() => nextImage()} className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-              <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/70 dark:bg-gray-200/90 group-hover:bg-white/90 dark:group-hover:bg-gray-200/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
+            <button
+              type="button"
+              onClick={() => nextImage()}
+              className="group absolute end-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
+              data-carousel-next
+            >
+              <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/70 group-hover:bg-white/90 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-200/90 dark:group-hover:bg-gray-200/60 dark:group-focus:ring-gray-800/70">
+                <svg
+                  className="h-4 w-4 text-white rtl:rotate-180 dark:text-gray-800"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 6 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 9 4-4-4-4"
+                  />
                 </svg>
                 <span class="sr-only">Next</span>
               </span>
             </button>
           </div>
-
         </Transition.Child>
       </Transition.Root>
     </div>
   )
 }
 
-export function CallToAction() {
+export function CallToActionFeo() {
   const [showModal, setShowModal] = useState(false)
 
   return (
-    <div className="bg-[#151823] scroll-smooth">
+    <div className="scroll-smooth bg-[#151823]">
       <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
         <div className="relative isolate overflow-hidden bg-[#151823] px-6 pt-16 shadow-2xl shadow-gray-950 sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
           {/** Yellow shine at bottom */}
@@ -190,12 +246,10 @@ export function CallToAction() {
               </div>
             </div>
 
-            <div className=''>
+            <div className="">
               <IndicatorsSlider />
             </div>
-
           </div>
-
         </div>
       </div>
 
