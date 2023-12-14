@@ -2,6 +2,9 @@
 import { useState } from 'react'
 import { CheckCircleIcon } from '@heroicons/react/20/solid'
 import ModalRequestAccess from './ModalRequestAccess'
+import VerticalCarousel from './Carousel/VerticalCarousel'
+import { config } from "react-spring";
+import Example from './Carousel/example'
 
 function ArrowRightIcon(props) {
   return (
@@ -17,6 +20,41 @@ function ArrowRightIcon(props) {
     </svg>
   )
 }
+
+let slides = [
+  {
+    key: 1,
+    content: "1"
+  },
+  {
+    key: 2,
+    content: "2"
+  },
+  {
+    key: 3,
+    content: "2"
+  },
+  {
+    key: 4,
+    content: "3"
+  },
+  {
+    key: 5,
+    content: "4"
+  },
+  {
+    key: 6,
+    content: "5"
+  },
+  {
+    key: 7,
+    content: "6"
+  },
+  {
+    key: 8,
+    content: "7"
+  }
+];
 
 export function CallToAction() {
   const [showModal, setShowModal] = useState(false)
@@ -45,8 +83,6 @@ export function CallToAction() {
               </radialGradient>
             </defs>
           </svg>
-
-          {/** Text & Title */}
           <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
             <h2 className="gold-shine-animation font-Optician text-5xl font-medium text-[#efb810] sm:text-4xl">
               TOP #1
@@ -77,28 +113,10 @@ export function CallToAction() {
               </div>
             </div>
           </div>
-          
           {/** Image Indicator 1 */}
-          <div className="relative mt-16 h-80 lg:mt-8">
-            <img
-              className="absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
-              src="https://s3.tradingview.com/snapshots/d/d8dnXvmQ.png"
-              alt="App screenshot"
-              width={1824}
-              height={1080}
-            />
-          </div>
-
-          {/** Image Indicator 2 */}
-          <div className="relative mt-16 h-80 lg:mt-8">
-            <img
-              className="absolute left-14 top-32 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
-              src="https://s3.tradingview.com/snapshots/d/d8dnXvmQ.png"
-              alt="App screenshot"
-              width={1824}
-              height={1080}
-            />
-          </div>
+          
+            <Example/>
+          
         </div>
       </div>
 
