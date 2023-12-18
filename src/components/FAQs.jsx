@@ -65,8 +65,8 @@ export function FrequentlyAskedQuestions() {
         {/** content */}
         <div className="mx-auto max-w-4xl divide-y divide-gray-200/10 font-AkzidenzLight tracking-wider">
           <dl className="mt-10 space-y-6 divide-y divide-gray-200/10 ">
-            {faqs.map((faq) => (
-              <Disclosure as="div" key={faq.question} className="ak pt-6">
+            {faqs.map((faq,index) => (
+              <Disclosure as="div" key={index} className="ak pt-6">
                 {({ open }) => (
                   <>
                     <dt>
