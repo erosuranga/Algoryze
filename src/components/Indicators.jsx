@@ -175,6 +175,11 @@ export function Indicators() {
       title: "#3 Previous Day High and Low + Separators Daily/Weekly",
       text: "This powerful tool uses separators to mark trading days and weeks, displaying clear lines for the previous day's high and low on your chart. Understanding these reference points is crucial for predicting the next trading day's direction, be it a trend continuation or reversal. The indicator offers customization options, allowing you to adjust line appearance and intensity to match your chart's design. Enhance your trading analysis with this adaptable tool, visually tracking key reference points while tailoring it to your chart's aesthetics and needs.",
       image: 'https://s3.tradingview.com/snapshots/d/d8dnXvmQ.png'
+    },
+    {
+      title: "#4 Previous Day High and Low + Separators Daily/Weekly",
+      text: "This powerful tool uses separators to mark trading days and weeks, displaying clear lines for the previous day's high and low on your chart. Understanding these reference points is crucial for predicting the next trading day's direction, be it a trend continuation or reversal. The indicator offers customization options, allowing you to adjust line appearance and intensity to match your chart's design. Enhance your trading analysis with this adaptable tool, visually tracking key reference points while tailoring it to your chart's aesthetics and needs.",
+      image: 'https://s3.tradingview.com/snapshots/d/d8dnXvmQ.png'
     }
   ]
 
