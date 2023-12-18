@@ -40,12 +40,12 @@ export function Hero() {
   return (
     <div className="relative py-20 sm:pb-24 sm:pt-36">
       <Container className="relative">
-        <div className="ripple-background absolut z-40">
-          <div className="circle xxlarge shade1"></div>
-          <div className="circle xlarge shade2"></div>
+        <div className="ripple-background absolut z-40 ">
+          <div className="circle xxlarge shade1 hidden sm:block"></div>
+          <div className="circle xlarge shade2 hidden sm:block"></div>
           <div className="circle large shade3"></div>
           <div className="circle mediun shade4"></div>
-          <div className="circle small shade5 "></div>
+          <div className="circle small shade5"></div>
         </div>
 
         <div className=" mx-auto max-w-2xl lg:max-w-4xl lg:px-12">

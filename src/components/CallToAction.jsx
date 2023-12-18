@@ -20,54 +20,33 @@ function ArrowRightIcon(props) {
 
 const IndicatorsCarousel = () => {
   const imagesUrls = [
-    'https://s3.tradingview.com/snapshots/d/d8dnXvmQ.png',
-    'https://s3.tradingview.com/snapshots/z/zC16fLpC.png',
+    'https://s3.tradingview.com/snapshots/d/d8dnXvmQ.png', 
+    'https://s3.tradingview.com/snapshots/z/zC16fLpC.png', 
   ]
 
   const [image, setImage] = useState(0)
 
-  // Function to switch to the next image
-  const switchToNextImage = () => {
-    setImage((prevImage) => (prevImage + 1) % imagesUrls.length)
-  }
-
-  // Use useEffect to set up the interval for switching images
-  useEffect(() => {
-    const intervalId = setInterval(switchToNextImage, 4000)
-
-    // Clear the interval when the component unmounts
-    return () => clearInterval(intervalId)
-  }, [])
-
   return (
     <div className="grid gap-4">
-      {imagesUrls.map((imageUrl, index) => (
-        <div
-          key={index}
-          className={
-            image === index
-              ? 'duration-700 ease-in-out'
-              : 'hidden transform transition duration-700 ease-in-out'
-          }
+     
+        <div          
+          className="transform transition duration-700 ease-in-out"
           data-carousel-item
-        >
-          <img
-            src={imageUrl}
-            className=" h-auto rounded-lg hover:origin-bottom hover:scale-x-110 hover:scale-y-125"
-            alt={`Image ${index + 1}`}
-          />
-        </div>
-      ))}
+          >
+            <img src={imagesUrls[image]} className="h-auto rounded-lg hover:origin-bottom hover:scale-x-110 hover:scale-y-125 shadow-lg shadow-gray-950" alt={`Image ${image}`}/>
+      </div>
 
       <div className="grid grid-cols-2 gap-4">
         <img
-          className="mx-auto h-auto rounded-lg hover:scale-90 "
+          className="mx-auto h-auto rounded-lg hover:scale-90 shadow-lg shadow-gray-950"
           src={imagesUrls[0]}
+          onClick={() => setImage(0)}
           alt=""
         />
         <img
-          className="mx-auto h-auto rounded-lg hover:scale-90"
+          className="mx-auto h-auto rounded-lg hover:scale-90 shadow-lg shadow-gray-950"
           src={imagesUrls[1]}
+          onClick={() => setImage(1)}          
           alt=""
         />
       </div>
@@ -137,7 +116,7 @@ export function CallToAction() {
           </div>
 
           {/** Images */}
-          <div className="my-auto w-3/4 shadow shadow-md">
+          <div className="mt-10 sm:my-auto w-full sm:w-3/4">
             <IndicatorsCarousel />
           </div>
         </div>
