@@ -7,11 +7,9 @@ import Isotipo from '../images/logos/isotipo_golden.png'
 import MacbookTrading from '@/images/macbook_trading.png'
 import { Transition } from '@headlessui/react'
 
-const SlideFromRight = () => {
+const SlideFromRight = ({ contentIndex, setContentIndex, indicatorsContent }) => {
   const [isInViewport, setIsInViewport] = useState(false)
   const elementRef = useRef(null)
-
-  const [image, setImage] = useState(0)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -45,20 +43,18 @@ const SlideFromRight = () => {
   }, [])
 
   function nextImage() {
-    console.log('next', image)
-    if (image < 3) {
-      setImage(image + 1)
+    if (contentIndex < 3) {
+      setContentIndex(contentIndex + 1)
     } else {
-      setImage(0)
+      setContentIndex(0)
     }
   }
 
   function prevImage() {
-    console.log('prev', image)
-    if (image > 0) {
-      setImage(image - 1)
+    if (contentIndex > 0) {
+      setContentIndex(contentIndex - 1)
     } else {
-      setImage(3)
+      setContentIndex(3)
     }
   }
 
@@ -77,70 +73,27 @@ const SlideFromRight = () => {
           {/** Carousel */}
           <div
             id="default-carousel"
-            class="relative w-full"
+            className="relative w-full"
             data-carousel="slide"
           >
-            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-              {/** Image 1 */}
-              <div
-                className={
-                  image === 0
-                    ? 'duration-700 ease-in-out'
-                    : `hidden transform transition duration-700 ease-in-out`
-                }
-                data-carousel-item
-              >
-                <img
-                  src="https://s3.tradingview.com/snapshots/d/d8dnXvmQ.png"
-                  className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
-                  alt="..."
-                />
-              </div>
-              {/** Image 2 */}
-              <div
-                className={
-                  image === 1
-                    ? 'duration-700 ease-in-out'
-                    : `hidden transform transition duration-700 ease-in-out`
-                }
-                data-carousel-item
-              >
-                <img
-                  src="https://static.tradingview.com/static/bundles/slider.0f29f659d6db3d3514e6.png"
-                  className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
-                  alt="..."
-                />
-              </div>
-              {/** Image 3 */}
-              <div
-                className={
-                  image === 2
-                    ? 'duration-700 ease-in-out'
-                    : `hidden transform transition duration-700 ease-in-out`
-                }
-                data-carousel-item
-              >
-                <img
-                  src="https://static.tradingview.com/static/bundles/advanced-charts.f1788c1e6e8b222d0b85.jpg"
-                  className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
-                  alt="..."
-                />
-              </div>
-              {/** Image 4 */}
-              <div
-                className={
-                  image === 3
-                    ? 'duration-700 ease-in-out'
-                    : `hidden transform transition duration-700 ease-in-out`
-                }
-                data-carousel-item
-              >
-                <img
-                  src="https://s3.tradingview.com/6/6W7to2SK_mid.png"
-                  className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
-                  alt="..."
-                />
-              </div>
+            <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
+
+              {
+                indicatorsContent.map((item, index) => (
+                  <div className={
+                    contentIndex === index
+                      ? 'duration-700 ease-in-out'
+                      : `hidden transform transition duration-700 ease-in-out`
+                  }
+                    data-carousel-item key={index}>
+                    <img
+                      src={item.image}
+                      className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                      alt="..."
+                    />
+                  </div>
+                ))
+              }
             </div>
 
             {/** Left */}
@@ -160,9 +113,9 @@ const SlideFromRight = () => {
                 >
                   <path
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M5 1 1 5l4 4"
                   />
                 </svg>
@@ -187,13 +140,13 @@ const SlideFromRight = () => {
                 >
                   <path
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="m1 9 4-4-4-4"
                   />
                 </svg>
-                <span class="sr-only">Next</span>
+                <span className="sr-only">Next</span>
               </span>
             </button>
           </div>
@@ -203,32 +156,29 @@ const SlideFromRight = () => {
   )
 }
 
-const IndicatorsContent = [
-  {
-    title: 'Previous Day High and Low + Separators Daily/Weekly',
-    text: "This powerful tool uses separators to mark trading days and weeks, displaying clear lines for the previous day's high and low on your chart.",
-    text_2:
-      "Understanding these reference points is crucial for predicting the next trading day's direction, be it a trend continuation or reversal.",
-    text_3:
-      "The indicator offers customization options, allowing you to adjust line appearance and intensity to match your chart's design.",
-    text_4:
-      "Enhance your trading analysis with this adaptable tool, visually tracking key reference points while tailoring it to your chart's aesthetics and needs.",
-  },
-  {
-    title: 'Previous Day High and Low + Separators Daily/Weekly',
-    text_2:
-      "Understanding these reference points is crucial for predicting the next trading day's direction, be it a trend continuation ",
-  },
-  {
-    title: 'Previous Day High and Low + Separators Daily/Weekly',
-    text_2: 'Understanding these ref',
-  },
-  {
-    title: '',
-  },
-]
-
 export function Indicators() {
+
+  const [contentIndex, setContentIndex] = useState(0)
+
+  const indicatorsContent = [
+    {
+      title: "#1 Previous Day High and Low + Separators Daily/Weekly",
+      text: "This powerful tool uses separators to mark trading days and weeks, displaying clear lines for the previous day's high and low on your chart. Understanding these reference points is crucial for predicting the next trading day's direction, be it a trend continuation or reversal. The indicator offers customization options, allowing you to adjust line appearance and intensity to match your chart's design. Enhance your trading analysis with this adaptable tool, visually tracking key reference points while tailoring it to your chart's aesthetics and needs.",
+      image: 'https://s3.tradingview.com/snapshots/d/d8dnXvmQ.png'
+    },
+    {
+      title: "#2 Previous Day High and Low + Separators Daily/Weekly",
+      text: "This powerful tool uses separators to mark trading days and weeks, displaying clear lines for the previous day's high and low on your chart. Understanding these reference points is crucial for predicting the next trading day's direction, be it a trend continuation or reversal. The indicator offers customization options, allowing you to adjust line appearance and intensity to match your chart's design. Enhance your trading analysis with this adaptable tool, visually tracking key reference points while tailoring it to your chart's aesthetics and needs.",
+      image: 'https://s3.tradingview.com/snapshots/d/d8dnXvmQ.png'
+    },
+    {
+      title: "#3 Previous Day High and Low + Separators Daily/Weekly",
+      text: "This powerful tool uses separators to mark trading days and weeks, displaying clear lines for the previous day's high and low on your chart. Understanding these reference points is crucial for predicting the next trading day's direction, be it a trend continuation or reversal. The indicator offers customization options, allowing you to adjust line appearance and intensity to match your chart's design. Enhance your trading analysis with this adaptable tool, visually tracking key reference points while tailoring it to your chart's aesthetics and needs.",
+      image: 'https://s3.tradingview.com/snapshots/d/d8dnXvmQ.png'
+    }
+  ]
+
+
   return (
     <div className="relative isolate overflow-hidden bg-[#151823] px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
       <div className="absolute inset-0 -z-10 overflow-hidden">
@@ -273,40 +223,17 @@ export function Indicators() {
                 Algoryze Indicators
               </h1>
               <h2 className="mt-10 font-AkzidenzLight text-xl font-medium text-gray-50 sm:text-xl">
-                Previous Day High and Low + Separators Daily/Weekly
+                {indicatorsContent[contentIndex].title}
               </h2>
               <p className="mt-6 font-AkzidenzLight font-medium leading-8  text-gray-100">
-                This powerful tool uses separators to mark trading days and
-                weeks, displaying clear lines for the previous day&apos;s high
-                and low on your chart.
+                {indicatorsContent[contentIndex].text}
               </p>
             </div>
           </div>
         </div>
-        <div className="sm:-ml-12 sm:-mt-12 sm:-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden ">
+        <div className="sm:-ml-12 sm:-mt-12 sm:p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden ">
           {/** fix positioning */}
-          <SlideFromRight />
-        </div>
-        <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-          <div className="lg:pr-4">
-            <div className="max-w-xl font-AkzidenzLight text-base font-medium leading-8 text-gray-100 lg:max-w-lg">
-              <p className="my-4">
-                Understanding these reference points is crucial for predicting
-                the next trading day&apos;s direction, be it a trend
-                continuation or reversal.
-              </p>
-              <p className="my-4">
-                The indicator offers customization options, allowing you to
-                adjust line appearance and intensity to match your chart&apos;s
-                design.
-              </p>
-              <p className="my-4">
-                Enhance your trading analysis with this adaptable tool, visually
-                tracking key reference points while tailoring it to your
-                chart&apos;s aesthetics and needs.
-              </p>
-            </div>
-          </div>
+          <SlideFromRight contentIndex={contentIndex} setContentIndex={setContentIndex} indicatorsContent={indicatorsContent} />
         </div>
       </div>
     </div>
